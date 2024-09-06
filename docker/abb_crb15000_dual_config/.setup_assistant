@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: abb_crb15000_dual_support
+    relative_path: urdf/abb_crb15000_dual_cell.xacro
+    xacro_args: ""
+  SRDF:
+    relative_path: config/abb_crb15000_dual_cell.srdf
+  CONFIG:
+    author_name: Jingwen Wang
+    author_email: jingwen.wang@epfl.ch
+    generated_timestamp: 1682523177
