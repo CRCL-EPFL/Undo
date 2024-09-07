@@ -26,9 +26,6 @@ The project uses the following 3rd party libraries:
 - Metashape stand-alone Python module
 
 ## Installation
-- COMPAS
-- COMPAS FAB
-- To build and test the project, follow the following steps:
 
 ### 1. Setting up the Anaconda environment with COMPAS, COMPAS_FAB AND COMPAS_RRC
 ```terminal
