@@ -43,7 +43,16 @@ The project uses the following 3rd party libraries:
 ```terminal
 (undo) python -m compas_rhino.install -v 7.0
 ```
-### 2. Install dependencies
+### 2. Install libraries
 ```terminal
 (undo) pip install sth
+```
+### 3. Install Metashape module as a regular wheel package.
+on Windows (64-bit)
+```terminal
+(undo) python3.exe -m pip install Metashape-2.1.2-cp37.cp38.cp39.cp310.cp311-none-win_amd64.whl
+```
+on mac
+```terminal
+(undo) python3 -m pip install Metashape-2.1.0-cp37.cp38.cp39.cp310.cp311-abi3-macosx_11_0_universal2.macosx_10_13_x86_64.whl
 ```
