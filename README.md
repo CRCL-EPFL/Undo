@@ -15,7 +15,7 @@ The project uses the following 3rd party libraries:
 
 ## Dependancies
 - COMPAS==1.17.5
-- COMPAS FAB==2.0.0
+- COMPAS FAB==0.27.0
 - COMPAS RRC
 - open3d
 - numpy==2.0.0
