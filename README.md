@@ -17,7 +17,6 @@ The project uses the following 3rd party libraries:
 - COMPAS
 - COMPAS FAB
 - COMPAS RRC
-- Github Desktop
 - open3d
 - numpy
 
@@ -37,7 +36,7 @@ The project uses the following 3rd party libraries:
 (base) conda activate undo
 ```
 ```terminal
-(undo) conda activate undo
+(base) pip install compas-rrc
 ```
 ```terminal
 (undo) python -m compas_rhino.install -v 7.0
