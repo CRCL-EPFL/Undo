@@ -18,6 +18,7 @@ The project uses the following 3rd party libraries:
 - COMPAS FAB==0.27.0
 - COMPAS RRC
 - open3d
+- opencv
 - numpy==2.0.0
 - polyscope==2.2.1
 - trimesh==4.4.3
