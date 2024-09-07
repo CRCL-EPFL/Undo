@@ -20,3 +20,25 @@ The project uses the following 3rd party libraries:
 - Github Desktop
 - open3d
 - numpy
+
+## Installation
+- COMPAS
+- COMPAS FAB
+- To build and test the project, follow the following steps:
+
+### 1. Setting up the Anaconda environment with COMPAS, COMPAS_FAB AND COMPAS_RRC
+```terminal
+(base) conda config --add channels conda-forge
+```
+```terminal
+(base) conda create -n undo compas_fab=0.27.0 --yes
+```
+```terminal
+(base) conda activate undo
+```
+```terminal
+(undo) conda activate undo
+```
+```terminal
+(undo) python -m compas_rhino.install -v 7.0
+```
