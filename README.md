@@ -48,7 +48,7 @@ The project uses the following 3rd party libraries:
 ```terminal
 (undo) pip install sth
 ```
-### 3. Install Metashape module as a regular wheel package which you downloaded from [here]([url](https://agisoft.freshdesk.com/support/solutions/articles/31000148930-how-to-install-metashape-stand-alone-python-module)).
+### 3. Install Metashape module as a regular wheel package which you downloaded from [here](https://agisoft.freshdesk.com/support/solutions/articles/31000148930-how-to-install-metashape-stand-alone-python-module)
 on Windows (64-bit)
 ```terminal
 (undo) python3.exe -m pip install Metashape-2.1.2-cp37.cp38.cp39.cp310.cp311-none-win_amd64.whl
