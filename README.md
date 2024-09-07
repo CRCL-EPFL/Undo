@@ -14,11 +14,16 @@ The project uses the following 3rd party libraries:
 - Agisoft Metashape 2.1.x
 
 ## Dependancies
-- COMPAS
-- COMPAS FAB
+- COMPAS==1.17.5
+- COMPAS FAB==2.0.0
 - COMPAS RRC
 - open3d
-- numpy
+- numpy==2.0.0
+- polyscope==2.2.1
+- trimesh==4.4.3
+- plyfile==1.0.3
+- tabulate
+- Metashape stand-alone Python module
 
 ## Installation
 - COMPAS
@@ -36,8 +41,12 @@ The project uses the following 3rd party libraries:
 (base) conda activate undo
 ```
 ```terminal
-(base) pip install compas-rrc
+(undo) pip install compas-rrc
 ```
 ```terminal
 (undo) python -m compas_rhino.install -v 7.0
+```
+### 2. Install dependencies
+```terminal
+(undo) pip install sth
 ```
