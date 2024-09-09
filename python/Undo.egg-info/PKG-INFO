@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: Undo
+Version: 0.0.1
+Summary: ...
+Home-page: https://github.com/CRCL-EPFL/Undo
+Author: CRCL
+Author-email: ziqi.wang@epfl.ch
+License: MIT
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: numpy==2.0.0
+Requires-Dist: polyscope==2.2.1
+Requires-Dist: trimesh==4.4.3
+Requires-Dist: plyfile==1.0.3
+Requires-Dist: tabulate==0.9.0
+Requires-Dist: open3d
+Requires-Dist: opencv-python

@@ -1,0 +1,7 @@
+numpy==2.0.0
+polyscope==2.2.1
+trimesh==4.4.3
+plyfile==1.0.3
+tabulate==0.9.0
+open3d
+opencv-python
