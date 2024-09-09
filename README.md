@@ -44,9 +44,12 @@ The project uses the following 3rd party libraries:
 ```terminal
 (undo) python -m compas_rhino.install -v 7.0
 ```
-### 2. Install libraries
+### 2. Install undo library
 ```terminal
-(undo) pip install sth
+(undo) cd C:\Users\eleni\Documents\GitHub\Undo>
+```
+```terminal
+(undo) C:\Users\eleni\Documents\GitHub\Undo> pip install -e.
 ```
 ### 3. Install Metashape module as a regular wheel package which you downloaded from [here](https://agisoft.freshdesk.com/support/solutions/articles/31000148930-how-to-install-metashape-stand-alone-python-module)
 on Windows (64-bit)
