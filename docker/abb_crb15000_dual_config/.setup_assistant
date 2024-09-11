@@ -6,6 +6,6 @@ moveit_setup_assistant_config:
   SRDF:
     relative_path: config/abb_crb15000_dual_cell.srdf
   CONFIG:
-    author_name: Jingwen Wang
-    author_email: jingwen.wang@epfl.ch
-    generated_timestamp: 1682523177
+    author_name: eleni skevaki
+    author_email: eleni.skevaki@epfl.ch
+    generated_timestamp: 1726090079

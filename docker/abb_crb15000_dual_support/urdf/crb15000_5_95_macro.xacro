@@ -138,7 +138,7 @@
       <axis xyz="1 0 0"/>
       <parent link="${prefix}link_5"/>
       <child link="${prefix}link_6"/>
-      <limit effort="0" lower="${radians(-265)}" upper="${radians(265)}" velocity="${radians(200)}"/>
+      <limit effort="0" lower="${radians(-180)}" upper="${radians(180)}" velocity="${radians(200)}"/>
     </joint>
     <!-- end of joint list -->
 
