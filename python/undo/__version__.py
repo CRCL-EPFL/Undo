@@ -1,0 +1,8 @@
+__title__ = 'Undo'
+__description__ = '...'
+__url__ = 'https://github.com/CRCL-EPFL/Undo'
+__version__ = '0.0.1'
+__author__ = 'CRCL'
+__author_email__ = 'ziqi.wang@epfl.ch'
+__license__ = 'MIT'
+__copyright__ = 'Copyright 2024 CRCL'

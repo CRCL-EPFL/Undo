@@ -81,7 +81,7 @@ chunk.addPhotos(image_list)
 chunk.detectMarkers(Metashape.TargetType.CircularTarget12bit, tolerance=50)
 
 # Align cameras
-chunk.matchPhotos(generic_preselection=True, filter_stationary_points=True, keypoint_limit=40000, tiepoint_limit=40000)
+chunk.matchPhotos(generic_preselection=True, filter_stationary_points=True, keypoint_limit=400000, tiepoint_limit=400000)
 chunk.alignCameras()
 
 aligned_cameras = [camera for camera in chunk.cameras if camera.transform is not None]
