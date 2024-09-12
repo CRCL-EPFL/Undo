@@ -33,7 +33,7 @@ The project uses the following 3rd party libraries:
 (base) conda config --add channels conda-forge
 ```
 ```terminal
-(base) conda create -n undo python=3.8 compas_rrc=1.1.0 --yes
+(base) conda create -n undo python=3.9 compas_rrc=1.1.0 --yes
 ```
 ```terminal
 (base) conda activate undo
