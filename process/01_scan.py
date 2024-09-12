@@ -47,7 +47,7 @@ if __name__ == '__main__':
     cap.set(cv2.CAP_PROP_AUTOFOCUS, 1)
 
     cap.set(cv2.CAP_PROP_FPS, 30)
-    path = "C:/Users/eleni/Desktop/scan/"
+    path = os.path.abspath(os.path.join(HERE, '..', 'images/'))
 
     cnt = 1
 
