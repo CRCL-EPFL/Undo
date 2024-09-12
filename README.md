@@ -33,13 +33,13 @@ The project uses the following 3rd party libraries:
 (base) conda config --add channels conda-forge
 ```
 ```terminal
-(base) conda create -n undo compas_fab=0.27.0 --yes
+(base) conda create -n undo python=3.8 compas_rrc=1.1.0 --yes
 ```
 ```terminal
 (base) conda activate undo
 ```
 ```terminal
-(undo) pip install compas-rrc
+(undo) conda install compas_fab=0.27.0 --yes
 ```
 ```terminal
 (undo) python -m compas_rhino.install -v 7.0
