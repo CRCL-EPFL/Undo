@@ -1,3 +1,6 @@
 
 metashape/.DS_Store
 metashape/model.files/.DS_Store
+python/undo/__pycache__/__init__.cpython-39.pyc
+python/undo/__pycache__/point_cloud.cpython-39.pyc
+python/undo/__pycache__/primitives.cpython-39.pyc
