@@ -33,13 +33,13 @@ The project uses the following 3rd party libraries:
 (base) conda config --add channels conda-forge
 ```
 ```terminal
-(base) conda create -n undo compas_fab=0.27.0 --yes
+(base) conda create -n undo python=3.9 compas_rrc=1.1.0 --yes
 ```
 ```terminal
 (base) conda activate undo
 ```
 ```terminal
-(undo) pip install compas-rrc
+(undo) conda install compas_fab=0.27.0 --yes
 ```
 ```terminal
 (undo) python -m compas_rhino.install -v 7.0
@@ -57,6 +57,8 @@ on Windows (64-bit)
 (undo) python3.exe -m pip install Metashape-2.1.2-cp37.cp38.cp39.cp310.cp311-none-win_amd64.whl
 ```
 on mac
+first, rename the wheel file you downloaded to the following: Metashape-2.1.3-cp37.cp38.cp39.cp310.cp311-abi3-macosx_11_0_universal2.macosx_10_13_x86_64.whl
+
 ```terminal
-(undo) python3 -m pip install Metashape-2.1.0-cp37.cp38.cp39.cp310.cp311-abi3-macosx_11_0_universal2.macosx_10_13_x86_64.whl
+(undo) python3 -m pip install Metashape-2.1.3-cp37.cp38.cp39.cp310.cp311-abi3-macosx_11_0_universal2.macosx_10_13_x86_64.whl
 ```
