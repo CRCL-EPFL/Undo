@@ -1,4 +1,5 @@
 /images/*
+!/images/.gitkeep
 metashape/.DS_Store
 metashape/model.files/.DS_Store
 python/undo/__pycache__/__init__.cpython-39.pyc
