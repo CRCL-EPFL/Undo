@@ -57,6 +57,8 @@ on Windows (64-bit)
 (undo) python3.exe -m pip install Metashape-2.1.2-cp37.cp38.cp39.cp310.cp311-none-win_amd64.whl
 ```
 on mac
+first, rename the wheel file you downloaded to the following: Metashape-2.1.3-cp37.cp38.cp39.cp310.cp311-abi3-macosx_11_0_universal2.macosx_10_13_x86_64.whl
+
 ```terminal
-(undo) python3 -m pip install Metashape-2.1.0-cp37.cp38.cp39.cp310.cp311-abi3-macosx_11_0_universal2.macosx_10_13_x86_64.whl
+(undo) python3 -m pip install Metashape-2.1.3-cp37.cp38.cp39.cp310.cp311-abi3-macosx_11_0_universal2.macosx_10_13_x86_64.whl
 ```
