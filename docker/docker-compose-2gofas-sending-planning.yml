@@ -97,7 +97,7 @@ services:
       - --wait
       - compas_rrc_driver
       - bringup.launch
-      - robot_ip:=192.168.20.1
+      - robot_ip:=192.168.20.10
       - robot_streaming_port:=30101
       - robot_state_port:=30201
       - namespace:=rob1
@@ -115,7 +115,7 @@ services:
       - --wait
       - compas_rrc_driver
       - bringup.launch
-      - robot_ip:=192.168.10.2
+      - robot_ip:=192.168.10.10
       - robot_streaming_port:=30101
       - robot_state_port:=30201
       - namespace:=rob2
