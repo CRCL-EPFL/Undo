@@ -1,6 +1,6 @@
 import compas_rrc as rrc
 import os
-from undo.production_data import ProductionData
+from production_data import ProductionData
 import json
 import sys
 import cv2
@@ -8,7 +8,7 @@ import time
 
 HERE = os.path.dirname(__file__)
 DATA = os.path.abspath(os.path.join(HERE, '..', 'data'))
-file_name = DATA + "/"+"20240731_scan.json"
+file_name = DATA + "/"+"20240912_scan.json"
 
 PRODUCTION_LOG_CONFIG = dict(
     ENABLED=True,                       # Generate a log of received feedback
@@ -35,30 +35,23 @@ if __name__ == '__main__':
     abb = rrc.AbbClient(ros, '/rob2')
     print('Connected.')
 
-    for tim in range(36):
+    cameraNumber = 0
+    width, height = 3840, 2160
 
-        cameraNumber = 0
-        width, height = 3840, 2160
+    fourcc = cv2.VideoWriter_fourcc('M','J','P','G')
+    cap = cv2.VideoCapture()
+    cap.open(cameraNumber + 1 + cv2.CAP_DSHOW)
+    cap.set(cv2.CAP_PROP_FOURCC, fourcc)
+    cap.set(cv2.CAP_PROP_FRAME_WIDTH, width)
+    cap.set(cv2.CAP_PROP_FRAME_HEIGHT, height)
+    cap.set(cv2.CAP_PROP_AUTOFOCUS, 1)
 
-        fourcc = cv2.VideoWriter_fourcc('M','J','P','G')
-        cap = cv2.VideoCapture()
-        cap.open(cameraNumber + 1 + cv2.CAP_DSHOW)
+    cap.set(cv2.CAP_PROP_FPS, 30)
+    path = os.path.abspath(os.path.join(HERE, '..', 'images/'))
 
-        time.sleep(1)
-        cap.set(cv2.CAP_PROP_FOURCC, fourcc)
-        cap.set(cv2.CAP_PROP_FRAME_WIDTH, width)
-        cap.set(cv2.CAP_PROP_FRAME_HEIGHT, height)
-        cap.set(cv2.CAP_PROP_AUTOFOCUS, 1)
+    cnt = 1
 
-        
-        #focus = 0  # min: 0, max: 255, increment:5
-        #cap.set(28, focus)
-
-        cap.set(cv2.CAP_PROP_FPS, 30)
-
-        cnt = tim * 9 + 1
-
-        path = "C:/Users/eleni/Desktop/scan/"
+    for tim in range(18):
 
         for i in range(len(production_data.actions)+1):
 
@@ -68,9 +61,9 @@ if __name__ == '__main__':
                 action = production_data.actions[i]
 
                 if (action.id-12) % 5 == 1 and action.id > 7:
-                    print(action.id)
                     cv2.imwrite(path + 'im_{}.png'.format(cnt), frame)
                     cnt += 1
+                abb.send_and_wait(rrc.WaitTime(0.25))
 
                 prefixed_action_class_name = '{}{}'.format("rrc.", action.name)
                 instruction_type = eval(prefixed_action_class_name)
@@ -80,7 +73,7 @@ if __name__ == '__main__':
                 instruction = instruction_type(**action.parameters)
                 abb.send_and_wait(instruction)
                 print(instruction)
-        
+
     # End of Code
     print('Finished')
 

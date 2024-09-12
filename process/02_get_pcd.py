@@ -30,7 +30,7 @@ def filter_point_cloud(input_path, output_path):
     # Filter points and colors
     filtered_indices = []
     for i, color in enumerate(colors):
-        if is_far_from(color, black_color, black_color_threshold) and points[i, 2] > 0.51:
+        if is_far_from(color, black_color, black_color_threshold) and points[i, 2] > 0.0:
             filtered_indices.append(i)
 
     filtered_indices = np.array(filtered_indices)
@@ -56,15 +56,9 @@ HERE = os.path.dirname(__file__)
 FOLDER = os.path.abspath(os.path.join(HERE, '..'))
 
 # Define paths
-<<<<<<< HEAD
-image_folder = FOLDER + "/scan"  # Change this to your image folder
+image_folder = FOLDER + "/images"  # Change this to your image folder
 project_path = FOLDER + "/metashape/model.psx"    # Path to save the Metashape project file
 point_cloud_path = FOLDER + "/ply/model.ply"  # Path to export the point cloud as a .ply file
-=======
-image_folder = "C:/Users/eleni/Desktop/scan/scan_state_C"  # Change this to your image folder
-project_path = "K:/.shortcut-targets-by-id/1IiGhZQRuFujGaxqXg4taUaPR55vt4fB7/DMS 2024/06_RobotFiles/metashape/state_C.psx"   # Path to save the Metashape project file
-point_cloud_path = "K:/.shortcut-targets-by-id/1IiGhZQRuFujGaxqXg4taUaPR55vt4fB7/DMS 2024/06_RobotFiles/metashape/automated_state_C.ply"  # Path to export the point cloud as a .ply file
->>>>>>> parent of 7869fa9 (test_scan)
 
 # Open or create a new Metashape project
 doc = Metashape.Document()
@@ -81,7 +75,7 @@ chunk.addPhotos(image_list)
 chunk.detectMarkers(Metashape.TargetType.CircularTarget12bit, tolerance=50)
 
 # Align cameras
-chunk.matchPhotos(generic_preselection=True, filter_stationary_points=True, keypoint_limit=400000, tiepoint_limit=400000)
+chunk.matchPhotos(generic_preselection=True, filter_stationary_points=True, keypoint_limit=40000, tiepoint_limit=40000)
 chunk.alignCameras()
 
 aligned_cameras = [camera for camera in chunk.cameras if camera.transform is not None]
@@ -91,14 +85,19 @@ print (str(len(aligned_cameras)) + " cameras were aligned")
 markers = chunk.markers
 
 marker_coordinates = {
-    73: (2.131,0.192,0.222),
-    74: (2.118,1.577,0.222),
-    75: (0.073,1.711,0.212),
-    76: (1.877,1.729,0.239),
-    77: (2.005,-0.028,0.204),
-    78: (0.167,-0.042,0.226),
-    86: (-0.078,1.498,0.213),
-    95: (-0.066,0.106,0.199)
+    11: (5.170,3.279,-0.197),
+    14: (0.001,3.048,-0.192),
+    16: (0.241,-0.004,-0.193),
+    20: (0.187,3.285,-0.198),
+    28: (5.392,0.226,-0.202),
+    33: (5.397,3.093,-0.204),
+    52: (5.223,-0.010,-0.191),
+    53: (-0.000,0.168,-0.177),
+    61: (5.146,3.060,-0.020),
+    84: (0.172,3.055,-0.024),
+    90: (0.174,0.181,-0.014),
+    92: (0.205,1.726,-0.017),
+    93: (3.429,3.047,-0.032)
 }
 
 for marker in chunk.markers:
