@@ -4,10 +4,11 @@ from undo.production_data import ProductionData
 import json
 import sys
 import roslibpy
+import time
 
 HERE = os.path.dirname(__file__)
 DATA = os.path.abspath(os.path.join(HERE, '..', 'data'))
-file_name = DATA + "/"+ "20240913_robotA_0.json"
+file_name = DATA + "/"+ "20240913_robotA_3.json"
 output_path = os.path.join(file_name + '_output.json')
 
 PRODUCTION_LOG_CONFIG = dict(
@@ -65,7 +66,8 @@ if __name__ == '__main__':
         if instruction_type is None:
             raise Exception('Cannot find implementation for instruction: {}'.format(action.name))
         instruction = instruction_type(**action.parameters)
-        abb.send_and_wait(instruction)
+        abb.send(instruction)
+        time.sleep(0.01)
         print(instruction)
         # Store production log
 
