@@ -1,13 +1,13 @@
 import compas_rrc as rrc
 import os
-from production_data import ProductionData
+from undo.production_data import ProductionData
 import json
 import sys
 import roslibpy
 
 HERE = os.path.dirname(__file__)
 DATA = os.path.abspath(os.path.join(HERE, '..', 'data'))
-file_name = DATA + "/"+ "20240905_robotA_12.json"
+file_name = DATA + "/"+ "20240913_robotB_1.json"
 output_path = os.path.join(file_name + '_output.json')
 
 PRODUCTION_LOG_CONFIG = dict(
@@ -48,7 +48,7 @@ if __name__ == '__main__':
     ros.run()
 
     #Create ABB Client
-    abb = rrc.AbbClient(ros, '/rob1')
+    abb = rrc.AbbClient(ros, '/rob2')
     print('Connected.')
 
     if PRODUCTION_LOG_CONFIG['ENABLED']:
