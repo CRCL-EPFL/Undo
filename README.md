@@ -39,7 +39,7 @@ The project uses the following 3rd party libraries:
 (base) conda activate undo
 ```
 ```terminal
-(undo) pip install compas_rrc=1.1.0
+(undo) pip install compas-rrc=1.1.0
 ```
 ```terminal
 (undo) pip install compas_fab=0.27.0
