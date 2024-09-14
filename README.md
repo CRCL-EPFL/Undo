@@ -39,7 +39,7 @@ The project uses the following 3rd party libraries:
 (base) conda activate undo
 ```
 ```terminal
-(undo) conda install compas_fab=0.27.0 --yes
+(undo) pip install compas_fab=0.27.0 --yes
 ```
 ```terminal
 (undo) python -m compas_rhino.install -v 7.0
