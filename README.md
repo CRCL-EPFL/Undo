@@ -33,7 +33,7 @@ The project uses the following 3rd party libraries:
 (base) conda config --add channels conda-forge
 ```
 ```terminal
-(base) conda create -n undo python=3.9
+(base) conda create -n undo python=3.9 -y
 ```
 ```terminal
 (base) conda activate undo
