@@ -58,7 +58,7 @@ FOLDER = os.path.abspath(os.path.join(HERE, '..'))
 # Define paths
 image_folder = FOLDER + "/images"  # Change this to your image folder
 project_path = FOLDER + "/metashape/model.psx"    # Path to save the Metashape project file
-point_cloud_path = FOLDER + "/ply/model.ply"  # Path to export the point cloud as a .ply file
+point_cloud_path = FOLDER + "/ply/kassel03.ply"  # Path to export the point cloud as a .ply file
 
 # Open or create a new Metashape project
 doc = Metashape.Document()
@@ -75,70 +75,70 @@ chunk.addPhotos(image_list)
 chunk.detectMarkers(Metashape.TargetType.CircularTarget12bit, tolerance=50)
 
 # Align cameras
-chunk.matchPhotos(generic_preselection=True, filter_stationary_points=True, keypoint_limit=40000, tiepoint_limit=40000)
+chunk.matchPhotos(generic_preselection=True, filter_stationary_points=True, keypoint_limit=400000, tiepoint_limit=400000)
 chunk.alignCameras()
 
 aligned_cameras = [camera for camera in chunk.cameras if camera.transform is not None]
-print (str(len(aligned_cameras)) + " cameras were aligned")
+print(str(len(aligned_cameras)) + " cameras were aligned")
 
-# Add marker coordinates manually
-markers = chunk.markers
+# # Add marker coordinates manually
+# markers = chunk.markers
 
-marker_coordinates = {
-    11: (5.170,3.279,-0.197),
-    14: (0.001,3.048,-0.192),
-    16: (0.241,-0.004,-0.193),
-    20: (0.187,3.285,-0.198),
-    28: (5.392,0.226,-0.202),
-    33: (5.397,3.093,-0.204),
-    52: (5.223,-0.010,-0.191),
-    53: (-0.000,0.168,-0.177),
-    61: (5.146,3.060,-0.020),
-    84: (0.172,3.055,-0.024),
-    90: (0.174,0.181,-0.014),
-    92: (0.205,1.726,-0.017),
-    93: (3.429,3.047,-0.032)
-}
+# marker_coordinates = {
+#     11: (5.170,3.279,-0.197),
+#     14: (0.001,3.048,-0.192),
+#     16: (0.241,-0.004,-0.193),
+#     20: (0.187,3.285,-0.198),
+#     28: (5.392,0.226,-0.202),
+#     33: (5.397,3.093,-0.204),
+#     52: (5.223,-0.010,-0.191),
+#     53: (-0.000,0.168,-0.177),
+#     61: (5.146,3.060,-0.020),
+#     84: (0.172,3.055,-0.024),
+#     90: (0.174,0.181,-0.014),
+#     92: (0.205,1.726,-0.017),
+#     93: (3.429,3.047,-0.032)
+# }
 
-for marker in chunk.markers:
-    idx = int(marker.label[-2:])
-    if idx in marker_coordinates:
-        coords = marker_coordinates[idx]
-        marker.reference.location = Metashape.Vector(coords)
-        marker.reference.enabled = True  # Ensure the marker is enabled in the reference system
-        print(f"Set marker {idx} with coordinates: {coords}")
-    # else:
-    #     print(f"Marker {idx} not found in reference coordinates!")
-
-# Log all marker coordinates for debugging
 # for marker in chunk.markers:
-#     if marker.reference.location is not None:
-#         print(f"Marker {marker.label} coordinates: {marker.reference.location}")
+#     idx = int(marker.label[-2:])
+#     if idx in marker_coordinates:
+#         coords = marker_coordinates[idx]
+#         marker.reference.location = Metashape.Vector(coords)
+#         marker.reference.enabled = True  # Ensure the marker is enabled in the reference system
+#         print(f"Set marker {idx} with coordinates: {coords}")
+#     # else:
+#     #     print(f"Marker {idx} not found in reference coordinates!")
 
-# Update transformation (optimize camera alignment and marker position)
-chunk.updateTransform()
+# # Log all marker coordinates for debugging
+# # for marker in chunk.markers:
+# #     if marker.reference.location is not None:
+# #         print(f"Marker {marker.label} coordinates: {marker.reference.location}")
 
-# Build depth maps (required before building point cloud)
-chunk.buildDepthMaps(downscale=2, filter_mode=Metashape.MildFiltering)
+# # Update transformation (optimize camera alignment and marker position)
+# chunk.updateTransform()
 
-# Build dense point cloud
-chunk.buildPointCloud(source_data=Metashape.DepthMapsData, point_colors=True)
+# # Build depth maps (required before building point cloud)
+# chunk.buildDepthMaps(downscale=2, filter_mode=Metashape.MildFiltering)
 
-# Export the point cloud to a .ply file
-chunk.exportPointCloud(point_cloud_path, format=Metashape.PointCloudFormatPLY)
+# # Build dense point cloud
+# chunk.buildPointCloud(source_data=Metashape.DepthMapsData, point_colors=True)
 
-# Save project after processing
-doc.save()
+# # Export the point cloud to a .ply file
+# chunk.exportPointCloud(point_cloud_path, format=Metashape.PointCloudFormatPLY)
 
-print("Script completed successfully.")
+# # Save project after processing
+# doc.save()
 
-# End timing and print the elapsed time
-end_time = time.time()
-elapsed_time = (end_time - start_time)/60
-print(f"Script took {elapsed_time:.2f} minutes to complete.")
+# print("Script completed successfully.")
 
-input_ply_path = point_cloud_path  # Update with your .ply file path
-output_ply_path = FOLDER + "/ply/model_clean.ply"  # Path to save the filtered .ply file
+# # End timing and print the elapsed time
+# end_time = time.time()
+# elapsed_time = (end_time - start_time)/60
+# print(f"Script took {elapsed_time:.2f} minutes to complete.")
 
-# Run the filter function
-filter_point_cloud(input_ply_path, output_ply_path)
+# input_ply_path = point_cloud_path  # Update with your .ply file path
+# output_ply_path = FOLDER + "/ply/model_clean.ply"  # Path to save the filtered .ply file
+
+# # Run the filter function
+# filter_point_cloud(input_ply_path, output_ply_path)

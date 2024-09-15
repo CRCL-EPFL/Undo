@@ -1,6 +1,6 @@
 import compas_rrc as rrc
 import os
-from production_data import ProductionData
+from undo.production_data import ProductionData
 import json
 import sys
 import cv2
@@ -48,7 +48,7 @@ if __name__ == '__main__':
 
     cap.set(cv2.CAP_PROP_FPS, 30)
     path = os.path.abspath(os.path.join(HERE, '..', 'images/'))
-
+    print(path)
     cnt = 1
 
     for tim in range(18):
@@ -61,7 +61,7 @@ if __name__ == '__main__':
                 action = production_data.actions[i]
 
                 if (action.id-12) % 5 == 1 and action.id > 7:
-                    cv2.imwrite(path + 'im_{}.png'.format(cnt), frame)
+                    cv2.imwrite(path + '/im_{}.png'.format(cnt), frame)
                     cnt += 1
                 abb.send_and_wait(rrc.WaitTime(0.25))
 
