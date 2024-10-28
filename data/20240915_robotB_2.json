@@ -1,1 +1,3065 @@
-{"actions": [{"parameters": {"tool_name": "tool0"}, "name": "SetTool", "id": 0, "dependency_ids": [], "namespace": "/"}, {"parameters": {"wobj_name": "wobj0"}, "name": "SetWorkObject", "id": 1, "dependency_ids": [], "namespace": "/"}, {"parameters": {"text": "Pickup Element?"}, "name": "PrintText", "id": 2, "dependency_ids": [], "namespace": "/"}, {"parameters": {}, "name": "Stop", "id": 3, "dependency_ids": [], "namespace": "/"}, {"parameters": {"value": 0, "io_name": "ABB_Scalable_IO_0_DO13"}, "name": "SetDigital", "id": 4, "dependency_ids": [], "namespace": "/"}, {"parameters": {"value": 1, "io_name": "ABB_Scalable_IO_0_DO14"}, "name": "SetDigital", "id": 5, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": -1, "feedback_level": 1, "speed": 100.0, "joints": [-125.94396739642193, 12.784843892583579, 37.472854747494658, 0.17403609962860314, 39.743021386405005, -81.602340692365928], "ext_axes": []}, "name": "MoveToJoints", "id": 6, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": -1, "feedback_level": 1, "frame": {"dtype": "compas.geometry/Frame", "value": {"yaxis": [0.71355056902247027, 0.70060365796463187, 0.00031606057402991914], "xaxis": [-0.70060197431957216, 0.71354971878085216, -0.0019163525992494355], "point": [-338.6095279574858, -438.95947484699786, 198.8243274081359]}, "guid": "fdc1812c-95ef-40bd-a024-0cc13deac36a"}, "speed": 100.0, "motion_type": "rrc.Motion.LINEAR"}, "name": "MoveToFrame", "id": 7, "dependency_ids": [], "namespace": "/"}, {"parameters": {"time": 1, "feedback_level": 1}, "name": "WaitTime", "id": 8, "dependency_ids": [], "namespace": "/"}, {"parameters": {"value": 0, "io_name": "ABB_Scalable_IO_0_DO14"}, "name": "SetDigital", "id": 9, "dependency_ids": [], "namespace": "/"}, {"parameters": {"value": 1, "io_name": "ABB_Scalable_IO_0_DO13"}, "name": "SetDigital", "id": 10, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [-125.94396739642193, 12.784843892583579, 37.472854747494658, 0.17403609962860314, 39.743021386405005, -81.602340692365928], "ext_axes": []}, "name": "MoveToJoints", "id": 11, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [-125.94396739642193, 12.784843892583579, 37.472854747494658, 0.17403609962860314, 39.743021386405005, -81.602340692365928], "ext_axes": []}, "name": "MoveToJoints", "id": 12, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [-122.50531792154391, 12.267540314169157, 35.078894453237091, -1.2788206711177792, 40.077765890859233, -79.286736861301634], "ext_axes": []}, "name": "MoveToJoints", "id": 13, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [-119.0666684466659, 11.750236735754735, 32.684934158979523, -2.7316774418641616, 40.412510395313475, -76.971133030237326], "ext_axes": []}, "name": "MoveToJoints", "id": 14, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [-115.62801897178788, 11.232933157340311, 30.290973864721959, -4.1845342126105436, 40.747254899767711, -74.655529199173031], "ext_axes": []}, "name": "MoveToJoints", "id": 15, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [-112.18936949690986, 10.715629578925887, 27.897013570464384, -5.6373909833569265, 41.081999404221946, -72.339925368108737], "ext_axes": []}, "name": "MoveToJoints", "id": 16, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [-108.75072002203184, 10.198326000511464, 25.50305327620682, -7.0902477541033093, 41.416743908676182, -70.024321537044429], "ext_axes": []}, "name": "MoveToJoints", "id": 17, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [-105.31207054715382, 9.6810224220970422, 23.109092981949253, -8.5431045248496904, 41.751488413130417, -67.708717705980135], "ext_axes": []}, "name": "MoveToJoints", "id": 18, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [-101.87342107227582, 9.1637188436826182, 20.715132687691685, -9.9959612955960733, 42.086232917584653, -65.393113874915827], "ext_axes": []}, "name": "MoveToJoints", "id": 19, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [-98.434771597397784, 8.646415265268196, 18.321172393434118, -11.448818066342456, 42.420977422038881, -63.077510043851525], "ext_axes": []}, "name": "MoveToJoints", "id": 20, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [-94.996122122519779, 8.1291116868537721, 15.92721209917655, -12.901674837088837, 42.755721926493123, -60.761906212787217], "ext_axes": []}, "name": "MoveToJoints", "id": 21, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [-91.557472647641745, 7.6118081084393481, 13.533251804918981, -14.354531607835224, 43.090466430947359, -58.446302381722916], "ext_axes": []}, "name": "MoveToJoints", "id": 22, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [-88.118823172763754, 7.0945045300249268, 11.139291510661414, -15.807388378581603, 43.425210935401594, -56.130698550658622], "ext_axes": []}, "name": "MoveToJoints", "id": 23, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [-84.680173697885721, 6.5772009516105028, 8.7453312164038479, -17.260245149327986, 43.75995543985583, -53.81509471959432], "ext_axes": []}, "name": "MoveToJoints", "id": 24, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [-81.241524223007701, 6.0598973731960797, 6.3513709221462751, -18.713101920074369, 44.094699944310065, -51.499490888530019], "ext_axes": []}, "name": "MoveToJoints", "id": 25, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [-77.802874748129696, 5.5425937947816566, 3.9574106278887147, -20.165958690820752, 44.429444448764301, -49.183887057465725], "ext_axes": []}, "name": "MoveToJoints", "id": 26, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [-74.364225273251677, 5.0252902163672344, 1.5634503336311421, -21.618815461567134, 44.764188953218529, -46.868283226401417], "ext_axes": []}, "name": "MoveToJoints", "id": 27, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [-70.925575798373643, 4.5079866379528113, -0.83050996062642446, -23.071672232313517, 45.098933457672771, -44.552679395337115], "ext_axes": []}, "name": "MoveToJoints", "id": 28, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [-67.486926323495638, 3.9906830595383886, -3.224470254883991, -24.524529003059897, 45.433677962127007, -42.237075564272814], "ext_axes": []}, "name": "MoveToJoints", "id": 29, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [-64.048276848617618, 3.4733794811239642, -5.6184305491415572, -25.977385773806279, 45.768422466581242, -39.921471733208513], "ext_axes": []}, "name": "MoveToJoints", "id": 30, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [-60.609627373739613, 2.9560759027095433, -8.0123908433991229, -27.430242544552659, 46.103166971035478, -37.605867902144219], "ext_axes": []}, "name": "MoveToJoints", "id": 31, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [-57.170977898861587, 2.4387723242951171, -10.406351137656696, -28.883099315299045, 46.437911475489713, -35.29026407107991], "ext_axes": []}, "name": "MoveToJoints", "id": 32, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [-53.732328423983574, 1.9214687458806963, -12.800311431914263, -30.335956086045424, 46.772655979943949, -32.974660240015609], "ext_axes": []}, "name": "MoveToJoints", "id": 33, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [-50.293678949105562, 1.4041651674662734, -15.194271726171829, -31.788812856791807, 47.107400484398177, -30.659056408951315], "ext_axes": []}, "name": "MoveToJoints", "id": 34, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [-46.855029474227536, 0.8868615890518492, -17.588232020429402, -33.241669627538194, 47.442144988852419, -28.343452577887007], "ext_axes": []}, "name": "MoveToJoints", "id": 35, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [-43.416379999349523, 0.36955801063742644, -19.982192314686962, -34.694526398284573, 47.776889493306648, -26.027848746822709], "ext_axes": []}, "name": "MoveToJoints", "id": 36, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [-39.977730524471511, -0.14774556777699629, -22.37615260894453, -36.147383169030952, 48.111633997760883, -23.712244915758415], "ext_axes": []}, "name": "MoveToJoints", "id": 37, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [-36.539081049593484, -0.66504914619142064, -24.770112903202108, -37.600239939777339, 48.446378502215126, -21.396641084694107], "ext_axes": []}, "name": "MoveToJoints", "id": 38, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [-33.100431574715472, -1.1823527246058434, -27.164073197459675, -39.053096710523718, 48.781123006669361, -19.081037253629809], "ext_axes": []}, "name": "MoveToJoints", "id": 39, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [-29.661782099837456, -1.699656303020266, -29.558033491717229, -40.505953481270097, 49.115867511123597, -16.765433422565511], "ext_axes": []}, "name": "MoveToJoints", "id": 40, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [-26.22313262495943, -2.2169598814346902, -31.951993785974807, -41.958810252016484, 49.450612015577825, -14.449829591501205], "ext_axes": []}, "name": "MoveToJoints", "id": 41, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [-22.784483150081417, -2.7342634598491116, -34.345954080232374, -43.411667022762863, 49.785356520032067, -12.134225760436907], "ext_axes": []}, "name": "MoveToJoints", "id": 42, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [-19.345833675203405, -3.2515670382635324, -36.739914374489942, -44.864523793509242, 50.120101024486296, -9.8186219293726111], "ext_axes": []}, "name": "MoveToJoints", "id": 43, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [-15.907184200325378, -3.7688706166779569, -39.133874668747509, -46.317380564255629, 50.454845528940531, -7.5030180983083028], "ext_axes": []}, "name": "MoveToJoints", "id": 44, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [-12.468534725447366, -4.2861741950923813, -41.52783496300507, -47.770237335002008, 50.789590033394774, -5.1874142672440069], "ext_axes": []}, "name": "MoveToJoints", "id": 45, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [-9.0298852505693414, -4.8034777735068026, -43.921795257262637, -49.223094105748388, 51.124334537849002, -2.8718104361796977], "ext_axes": []}, "name": "MoveToJoints", "id": 46, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [-5.5912357756913149, -5.3207813519212266, -46.315755551520219, -50.675950876494774, 51.459079042303244, -0.55620660511540176], "ext_axes": []}, "name": "MoveToJoints", "id": 47, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [-2.152586300813315, -5.8380849303356515, -48.709715845777772, -52.12880764724116, 51.793823546757473, 1.759397225948907], "ext_axes": []}, "name": "MoveToJoints", "id": 48, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [1.2860631740647108, -6.3553885087500719, -51.10367614003534, -53.58166441798754, 52.128568051211715, 4.0750010570132034], "ext_axes": []}, "name": "MoveToJoints", "id": 49, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [4.7247126489427105, -6.8726920871644932, -53.497636434292907, -55.034521188733919, 52.463312555665944, 6.3906048880774993], "ext_axes": []}, "name": "MoveToJoints", "id": 50, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [8.1633621238207628, -7.3899956655789207, -55.891596728550482, -56.487377959480312, 52.798057060120186, 8.7062087191418076], "ext_axes": []}, "name": "MoveToJoints", "id": 51, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [11.602011598698763, -7.9072992439933447, -58.28555702280805, -57.940234730226699, 53.132801564574422, 11.021812550206118], "ext_axes": []}, "name": "MoveToJoints", "id": 52, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [15.040661073576787, -8.4246028224077669, -60.679517317065617, -59.393091500973078, 53.46754606902865, 13.337416381270414], "ext_axes": []}, "name": "MoveToJoints", "id": 53, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [18.479310548454787, -8.9419064008221874, -63.073477611323185, -60.845948271719458, 53.802290573482892, 15.65302021233471], "ext_axes": []}, "name": "MoveToJoints", "id": 54, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [21.917960023332814, -9.4592099792366113, -65.467437905580752, -62.298805042465837, 54.137035077937121, 17.968624043399004], "ext_axes": []}, "name": "MoveToJoints", "id": 55, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [25.356609498210812, -9.9765135576510335, -67.86139819983832, -63.751661813212216, 54.471779582391363, 20.284227874463301], "ext_axes": []}, "name": "MoveToJoints", "id": 56, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [28.795258973088863, -10.493817136065461, -70.255358494095901, -65.204518583958603, 54.806524086845592, 22.599831705527624], "ext_axes": []}, "name": "MoveToJoints", "id": 57, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [32.233908447966861, -11.011120714479881, -72.649318788353469, -66.657375354704982, 55.141268591299827, 24.915435536591918], "ext_axes": []}, "name": "MoveToJoints", "id": 58, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [35.672557922844888, -11.528424292894305, -75.043279082611022, -68.110232125451375, 55.476013095754062, 27.231039367656216], "ext_axes": []}, "name": "MoveToJoints", "id": 59, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [39.111207397722893, -12.045727871308728, -77.43723937686859, -69.563088896197755, 55.810757600208298, 29.54664319872051], "ext_axes": []}, "name": "MoveToJoints", "id": 60, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [42.54985687260092, -12.563031449723148, -79.831199671126157, -71.015945666944134, 56.145502104662533, 31.862247029784807], "ext_axes": []}, "name": "MoveToJoints", "id": 61, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [45.988506347478918, -13.080335028137572, -82.22515996538371, -72.468802437690513, 56.480246609116769, 34.177850860849105], "ext_axes": []}, "name": "MoveToJoints", "id": 62, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [49.427155822356966, -13.597638606551996, -84.619120259641292, -73.921659208436907, 56.814991113571011, 36.493454691913414], "ext_axes": []}, "name": "MoveToJoints", "id": 63, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [52.865805297234971, -14.114942184966422, -87.013080553898874, -75.374515979183286, 57.14973561802524, 38.809058522977722], "ext_axes": []}, "name": "MoveToJoints", "id": 64, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [56.30445477211299, -14.63224576338084, -89.407040848156427, -76.827372749929665, 57.484480122479475, 41.12466235404203], "ext_axes": []}, "name": "MoveToJoints", "id": 65, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [59.743104246990995, -15.149549341795264, -91.801001142414009, -78.280229520676045, 57.81922462693371, 43.44026618510631], "ext_axes": []}, "name": "MoveToJoints", "id": 66, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [63.181753721869022, -15.666852920209688, -94.194961436671562, -79.733086291422424, 58.153969131387939, 45.755870016170626], "ext_axes": []}, "name": "MoveToJoints", "id": 67, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [66.62040319674702, -16.184156498624112, -96.588921730929115, -81.185943062168803, 58.488713635842181, 48.071473847234905], "ext_axes": []}, "name": "MoveToJoints", "id": 68, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [70.059052671625068, -16.701460077038536, -98.982882025186726, -82.638799832915197, 58.823458140296417, 50.387077678299242], "ext_axes": []}, "name": "MoveToJoints", "id": 69, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [73.497702146503073, -17.218763655452964, -101.37684231944428, -84.091656603661576, 59.158202644750659, 52.702681509363522], "ext_axes": []}, "name": "MoveToJoints", "id": 70, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [76.936351621381093, -17.736067233867381, -103.77080261370183, -85.544513374407956, 59.492947149204895, 55.01828534042783], "ext_axes": []}, "name": "MoveToJoints", "id": 71, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [80.375001096259098, -18.253370812281805, -106.1647629079594, -86.997370145154335, 59.827691653659123, 57.333889171492117], "ext_axes": []}, "name": "MoveToJoints", "id": 72, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [83.813650571137117, -18.770674390696229, -108.55872320221695, -88.450226915900714, 60.162436158113358, 59.649493002556426], "ext_axes": []}, "name": "MoveToJoints", "id": 73, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [87.252300046015122, -19.287977969110646, -110.95268349647453, -89.903083686647093, 60.497180662567601, 61.965096833620706], "ext_axes": []}, "name": "MoveToJoints", "id": 74, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [90.69094952089317, -19.805281547525077, -113.34664379073212, -91.355940457393487, 60.831925167021829, 64.280700664685043], "ext_axes": []}, "name": "MoveToJoints", "id": 75, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [94.129598995771175, -20.322585125939494, -115.74060408498968, -92.808797228139866, 61.166669671476065, 66.596304495749322], "ext_axes": []}, "name": "MoveToJoints", "id": 76, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [97.568248470649195, -20.839888704353921, -118.13456437924727, -94.261653998886246, 61.501414175930307, 68.911908326813631], "ext_axes": []}, "name": "MoveToJoints", "id": 77, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [101.0068979455272, -21.357192282768345, -120.52852467350479, -95.714510769632625, 61.836158680384528, 71.227512157877911], "ext_axes": []}, "name": "MoveToJoints", "id": 78, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [104.44554742040521, -21.874495861182769, -122.92248496776237, -97.167367540379018, 62.170903184838771, 73.543115988942233], "ext_axes": []}, "name": "MoveToJoints", "id": 79, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [107.88419689528325, -22.391799439597186, -125.31644526201995, -98.620224311125384, 62.505647689293006, 75.858719820006542], "ext_axes": []}, "name": "MoveToJoints", "id": 80, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [111.3228463701613, -22.909103018011617, -127.71040555627754, -100.07308108187178, 62.840392193747249, 78.17432365107085], "ext_axes": []}, "name": "MoveToJoints", "id": 81, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [114.76149584503931, -23.426406596426034, -130.10436585053512, -101.52593785261816, 63.175136698201477, 80.48992748213513], "ext_axes": []}, "name": "MoveToJoints", "id": 82, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [118.20014531991727, -23.943710174840454, -132.49832614479266, -102.97879462336454, 63.509881202655713, 82.805531313199438], "ext_axes": []}, "name": "MoveToJoints", "id": 83, "dependency_ids": [], "namespace": "/"}, {"parameters": {"text": "RobotB goes to final position of element"}, "name": "PrintText", "id": 84, "dependency_ids": [], "namespace": "/"}, {"parameters": {}, "name": "Stop", "id": 85, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": -1, "feedback_level": 1, "frame": {"dtype": "compas.geometry/Frame", "value": {"yaxis": [-0.0084140679761116784, -0.82055335517565731, 0.571508000617721], "xaxis": [0.0039364374388682847, 0.57149662384360855, 0.82059497524396707], "point": [503.50906268201709, -631.75221081809696, 804.61811348845549]}, "guid": "3e7a4849-112e-4b1d-9d80-039f1dcb9393"}, "speed": 100.0, "motion_type": "rrc.Motion.LINEAR"}, "name": "MoveToFrame", "id": 86, "dependency_ids": [], "namespace": "/"}, {"parameters": {"text": "Release element?"}, "name": "PrintText", "id": 87, "dependency_ids": [], "namespace": "/"}, {"parameters": {}, "name": "Stop", "id": 88, "dependency_ids": [], "namespace": "/"}, {"parameters": {"value": 0, "io_name": "ABB_Scalable_IO_0_DO13"}, "name": "SetDigital", "id": 89, "dependency_ids": [], "namespace": "/"}, {"parameters": {"value": 1, "io_name": "ABB_Scalable_IO_0_DO14"}, "name": "SetDigital", "id": 90, "dependency_ids": [], "namespace": "/"}, {"parameters": {"time": 0.5, "feedback_level": 1}, "name": "WaitTime", "id": 91, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": -1, "feedback_level": 1, "frame": {"dtype": "compas.geometry/Frame", "value": {"yaxis": [-0.0084140679761116784, -0.82055335517565731, 0.571508000617721], "xaxis": [0.0039364374388682847, 0.57149662384360855, 0.82059497524396707], "point": [403.51337737908102, -630.83678607881666, 804.46025803913176]}, "guid": "f2612689-378a-4a8b-954d-fdd90c432eef"}, "speed": 100.0, "motion_type": "rrc.Motion.LINEAR"}, "name": "MoveToFrame", "id": 92, "dependency_ids": [], "namespace": "/"}, {"parameters": {"text": "RobotB goes to pick element"}, "name": "PrintText", "id": 93, "dependency_ids": [], "namespace": "/"}, {"parameters": {}, "name": "Stop", "id": 94, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [118.20014531991727, -23.943710174840454, -132.49832614479266, -102.97879462336454, 63.509881202655713, 82.805531313199438], "ext_axes": []}, "name": "MoveToJoints", "id": 95, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [114.76149584503931, -23.426406596426034, -130.10436585053512, -101.52593785261816, 63.175136698201477, 80.48992748213513], "ext_axes": []}, "name": "MoveToJoints", "id": 96, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [111.3228463701613, -22.909103018011617, -127.71040555627754, -100.07308108187178, 62.840392193747249, 78.17432365107085], "ext_axes": []}, "name": "MoveToJoints", "id": 97, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [107.88419689528325, -22.391799439597186, -125.31644526201995, -98.620224311125384, 62.505647689293006, 75.858719820006542], "ext_axes": []}, "name": "MoveToJoints", "id": 98, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [104.44554742040521, -21.874495861182769, -122.92248496776237, -97.167367540379018, 62.170903184838771, 73.543115988942233], "ext_axes": []}, "name": "MoveToJoints", "id": 99, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [101.0068979455272, -21.357192282768345, -120.52852467350479, -95.714510769632625, 61.836158680384528, 71.227512157877911], "ext_axes": []}, "name": "MoveToJoints", "id": 100, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [97.568248470649195, -20.839888704353921, -118.13456437924727, -94.261653998886246, 61.501414175930307, 68.911908326813631], "ext_axes": []}, "name": "MoveToJoints", "id": 101, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [94.129598995771175, -20.322585125939494, -115.74060408498968, -92.808797228139866, 61.166669671476065, 66.596304495749322], "ext_axes": []}, "name": "MoveToJoints", "id": 102, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [90.69094952089317, -19.805281547525077, -113.34664379073212, -91.355940457393487, 60.831925167021829, 64.280700664685043], "ext_axes": []}, "name": "MoveToJoints", "id": 103, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [87.252300046015122, -19.287977969110646, -110.95268349647453, -89.903083686647093, 60.497180662567601, 61.965096833620706], "ext_axes": []}, "name": "MoveToJoints", "id": 104, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [83.813650571137117, -18.770674390696229, -108.55872320221695, -88.450226915900714, 60.162436158113358, 59.649493002556426], "ext_axes": []}, "name": "MoveToJoints", "id": 105, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [80.375001096259098, -18.253370812281805, -106.1647629079594, -86.997370145154335, 59.827691653659123, 57.333889171492117], "ext_axes": []}, "name": "MoveToJoints", "id": 106, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [76.936351621381093, -17.736067233867381, -103.77080261370183, -85.544513374407956, 59.492947149204895, 55.01828534042783], "ext_axes": []}, "name": "MoveToJoints", "id": 107, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [73.497702146503073, -17.218763655452964, -101.37684231944428, -84.091656603661576, 59.158202644750659, 52.702681509363522], "ext_axes": []}, "name": "MoveToJoints", "id": 108, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [70.059052671625068, -16.701460077038536, -98.982882025186726, -82.638799832915197, 58.823458140296417, 50.387077678299242], "ext_axes": []}, "name": "MoveToJoints", "id": 109, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [66.62040319674702, -16.184156498624112, -96.588921730929115, -81.185943062168803, 58.488713635842181, 48.071473847234905], "ext_axes": []}, "name": "MoveToJoints", "id": 110, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [63.181753721869022, -15.666852920209688, -94.194961436671562, -79.733086291422424, 58.153969131387939, 45.755870016170626], "ext_axes": []}, "name": "MoveToJoints", "id": 111, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [59.743104246990995, -15.149549341795264, -91.801001142414009, -78.280229520676045, 57.81922462693371, 43.44026618510631], "ext_axes": []}, "name": "MoveToJoints", "id": 112, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [56.30445477211299, -14.63224576338084, -89.407040848156427, -76.827372749929665, 57.484480122479475, 41.12466235404203], "ext_axes": []}, "name": "MoveToJoints", "id": 113, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [52.865805297234971, -14.114942184966422, -87.013080553898874, -75.374515979183286, 57.14973561802524, 38.809058522977722], "ext_axes": []}, "name": "MoveToJoints", "id": 114, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [49.427155822356966, -13.597638606551996, -84.619120259641292, -73.921659208436907, 56.814991113571011, 36.493454691913414], "ext_axes": []}, "name": "MoveToJoints", "id": 115, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [45.988506347478918, -13.080335028137572, -82.22515996538371, -72.468802437690513, 56.480246609116769, 34.177850860849105], "ext_axes": []}, "name": "MoveToJoints", "id": 116, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [42.54985687260092, -12.563031449723148, -79.831199671126157, -71.015945666944134, 56.145502104662533, 31.862247029784807], "ext_axes": []}, "name": "MoveToJoints", "id": 117, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [39.111207397722893, -12.045727871308728, -77.43723937686859, -69.563088896197755, 55.810757600208298, 29.54664319872051], "ext_axes": []}, "name": "MoveToJoints", "id": 118, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [35.672557922844888, -11.528424292894305, -75.043279082611022, -68.110232125451375, 55.476013095754062, 27.231039367656216], "ext_axes": []}, "name": "MoveToJoints", "id": 119, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [32.233908447966861, -11.011120714479881, -72.649318788353469, -66.657375354704982, 55.141268591299827, 24.915435536591918], "ext_axes": []}, "name": "MoveToJoints", "id": 120, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [28.795258973088863, -10.493817136065461, -70.255358494095901, -65.204518583958603, 54.806524086845592, 22.599831705527624], "ext_axes": []}, "name": "MoveToJoints", "id": 121, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [25.356609498210812, -9.9765135576510335, -67.86139819983832, -63.751661813212216, 54.471779582391363, 20.284227874463301], "ext_axes": []}, "name": "MoveToJoints", "id": 122, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [21.917960023332814, -9.4592099792366113, -65.467437905580752, -62.298805042465837, 54.137035077937121, 17.968624043399004], "ext_axes": []}, "name": "MoveToJoints", "id": 123, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [18.479310548454787, -8.9419064008221874, -63.073477611323185, -60.845948271719458, 53.802290573482892, 15.65302021233471], "ext_axes": []}, "name": "MoveToJoints", "id": 124, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [15.040661073576787, -8.4246028224077669, -60.679517317065617, -59.393091500973078, 53.46754606902865, 13.337416381270414], "ext_axes": []}, "name": "MoveToJoints", "id": 125, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [11.602011598698763, -7.9072992439933447, -58.28555702280805, -57.940234730226699, 53.132801564574422, 11.021812550206118], "ext_axes": []}, "name": "MoveToJoints", "id": 126, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [8.1633621238207628, -7.3899956655789207, -55.891596728550482, -56.487377959480312, 52.798057060120186, 8.7062087191418076], "ext_axes": []}, "name": "MoveToJoints", "id": 127, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [4.7247126489427105, -6.8726920871644932, -53.497636434292907, -55.034521188733919, 52.463312555665944, 6.3906048880774993], "ext_axes": []}, "name": "MoveToJoints", "id": 128, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [1.2860631740647108, -6.3553885087500719, -51.10367614003534, -53.58166441798754, 52.128568051211715, 4.0750010570132034], "ext_axes": []}, "name": "MoveToJoints", "id": 129, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [-2.152586300813315, -5.8380849303356515, -48.709715845777772, -52.12880764724116, 51.793823546757473, 1.759397225948907], "ext_axes": []}, "name": "MoveToJoints", "id": 130, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [-5.5912357756913149, -5.3207813519212266, -46.315755551520219, -50.675950876494774, 51.459079042303244, -0.55620660511540176], "ext_axes": []}, "name": "MoveToJoints", "id": 131, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [-9.0298852505693414, -4.8034777735068026, -43.921795257262637, -49.223094105748388, 51.124334537849002, -2.8718104361796977], "ext_axes": []}, "name": "MoveToJoints", "id": 132, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [-12.468534725447366, -4.2861741950923813, -41.52783496300507, -47.770237335002008, 50.789590033394774, -5.1874142672440069], "ext_axes": []}, "name": "MoveToJoints", "id": 133, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [-15.907184200325378, -3.7688706166779569, -39.133874668747509, -46.317380564255629, 50.454845528940531, -7.5030180983083028], "ext_axes": []}, "name": "MoveToJoints", "id": 134, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [-19.345833675203405, -3.2515670382635324, -36.739914374489942, -44.864523793509242, 50.120101024486296, -9.8186219293726111], "ext_axes": []}, "name": "MoveToJoints", "id": 135, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [-22.784483150081417, -2.7342634598491116, -34.345954080232374, -43.411667022762863, 49.785356520032067, -12.134225760436907], "ext_axes": []}, "name": "MoveToJoints", "id": 136, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [-26.22313262495943, -2.2169598814346902, -31.951993785974807, -41.958810252016484, 49.450612015577825, -14.449829591501205], "ext_axes": []}, "name": "MoveToJoints", "id": 137, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [-29.661782099837456, -1.699656303020266, -29.558033491717229, -40.505953481270097, 49.115867511123597, -16.765433422565511], "ext_axes": []}, "name": "MoveToJoints", "id": 138, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [-33.100431574715472, -1.1823527246058434, -27.164073197459675, -39.053096710523718, 48.781123006669361, -19.081037253629809], "ext_axes": []}, "name": "MoveToJoints", "id": 139, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [-36.539081049593484, -0.66504914619142064, -24.770112903202108, -37.600239939777339, 48.446378502215126, -21.396641084694107], "ext_axes": []}, "name": "MoveToJoints", "id": 140, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [-39.977730524471511, -0.14774556777699629, -22.37615260894453, -36.147383169030952, 48.111633997760883, -23.712244915758415], "ext_axes": []}, "name": "MoveToJoints", "id": 141, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [-43.416379999349523, 0.36955801063742644, -19.982192314686962, -34.694526398284573, 47.776889493306648, -26.027848746822709], "ext_axes": []}, "name": "MoveToJoints", "id": 142, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [-46.855029474227536, 0.8868615890518492, -17.588232020429402, -33.241669627538194, 47.442144988852419, -28.343452577887007], "ext_axes": []}, "name": "MoveToJoints", "id": 143, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [-50.293678949105562, 1.4041651674662734, -15.194271726171829, -31.788812856791807, 47.107400484398177, -30.659056408951315], "ext_axes": []}, "name": "MoveToJoints", "id": 144, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [-53.732328423983574, 1.9214687458806963, -12.800311431914263, -30.335956086045424, 46.772655979943949, -32.974660240015609], "ext_axes": []}, "name": "MoveToJoints", "id": 145, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [-57.170977898861587, 2.4387723242951171, -10.406351137656696, -28.883099315299045, 46.437911475489713, -35.29026407107991], "ext_axes": []}, "name": "MoveToJoints", "id": 146, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [-60.609627373739613, 2.9560759027095433, -8.0123908433991229, -27.430242544552659, 46.103166971035478, -37.605867902144219], "ext_axes": []}, "name": "MoveToJoints", "id": 147, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [-64.048276848617618, 3.4733794811239642, -5.6184305491415572, -25.977385773806279, 45.768422466581242, -39.921471733208513], "ext_axes": []}, "name": "MoveToJoints", "id": 148, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [-67.486926323495638, 3.9906830595383886, -3.224470254883991, -24.524529003059897, 45.433677962127007, -42.237075564272814], "ext_axes": []}, "name": "MoveToJoints", "id": 149, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [-70.925575798373643, 4.5079866379528113, -0.83050996062642446, -23.071672232313517, 45.098933457672771, -44.552679395337115], "ext_axes": []}, "name": "MoveToJoints", "id": 150, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [-74.364225273251677, 5.0252902163672344, 1.5634503336311421, -21.618815461567134, 44.764188953218529, -46.868283226401417], "ext_axes": []}, "name": "MoveToJoints", "id": 151, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [-77.802874748129696, 5.5425937947816566, 3.9574106278887147, -20.165958690820752, 44.429444448764301, -49.183887057465725], "ext_axes": []}, "name": "MoveToJoints", "id": 152, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [-81.241524223007701, 6.0598973731960797, 6.3513709221462751, -18.713101920074369, 44.094699944310065, -51.499490888530019], "ext_axes": []}, "name": "MoveToJoints", "id": 153, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [-84.680173697885721, 6.5772009516105028, 8.7453312164038479, -17.260245149327986, 43.75995543985583, -53.81509471959432], "ext_axes": []}, "name": "MoveToJoints", "id": 154, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [-88.118823172763754, 7.0945045300249268, 11.139291510661414, -15.807388378581603, 43.425210935401594, -56.130698550658622], "ext_axes": []}, "name": "MoveToJoints", "id": 155, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [-91.557472647641745, 7.6118081084393481, 13.533251804918981, -14.354531607835224, 43.090466430947359, -58.446302381722916], "ext_axes": []}, "name": "MoveToJoints", "id": 156, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [-94.996122122519779, 8.1291116868537721, 15.92721209917655, -12.901674837088837, 42.755721926493123, -60.761906212787217], "ext_axes": []}, "name": "MoveToJoints", "id": 157, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [-98.434771597397784, 8.646415265268196, 18.321172393434118, -11.448818066342456, 42.420977422038881, -63.077510043851525], "ext_axes": []}, "name": "MoveToJoints", "id": 158, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [-101.87342107227582, 9.1637188436826182, 20.715132687691685, -9.9959612955960733, 42.086232917584653, -65.393113874915827], "ext_axes": []}, "name": "MoveToJoints", "id": 159, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [-105.31207054715382, 9.6810224220970422, 23.109092981949253, -8.5431045248496904, 41.751488413130417, -67.708717705980135], "ext_axes": []}, "name": "MoveToJoints", "id": 160, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [-108.75072002203184, 10.198326000511464, 25.50305327620682, -7.0902477541033093, 41.416743908676182, -70.024321537044429], "ext_axes": []}, "name": "MoveToJoints", "id": 161, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [-112.18936949690986, 10.715629578925887, 27.897013570464384, -5.6373909833569265, 41.081999404221946, -72.339925368108737], "ext_axes": []}, "name": "MoveToJoints", "id": 162, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [-115.62801897178788, 11.232933157340311, 30.290973864721959, -4.1845342126105436, 40.747254899767711, -74.655529199173031], "ext_axes": []}, "name": "MoveToJoints", "id": 163, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [-119.0666684466659, 11.750236735754735, 32.684934158979523, -2.7316774418641616, 40.412510395313475, -76.971133030237326], "ext_axes": []}, "name": "MoveToJoints", "id": 164, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [-122.50531792154391, 12.267540314169157, 35.078894453237091, -1.2788206711177792, 40.077765890859233, -79.286736861301634], "ext_axes": []}, "name": "MoveToJoints", "id": 165, "dependency_ids": [], "namespace": "/"}, {"parameters": {"zone": 5, "feedback_level": 1, "speed": 100.0, "joints": [-125.94396739642193, 12.784843892583579, 37.472854747494658, 0.17403609962860314, 39.743021386405005, -81.602340692365928], "ext_axes": []}, "name": "MoveToJoints", "id": 166, "dependency_ids": [], "namespace": "/"}]}
+{
+    "actions": [
+        {
+            "parameters": {
+                "tool_name": "tool0"
+            },
+            "name": "SetTool",
+            "id": 0,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "wobj_name": "wobj0"
+            },
+            "name": "SetWorkObject",
+            "id": 1,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "text": "Pickup Element?"
+            },
+            "name": "PrintText",
+            "id": 2,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {},
+            "name": "Stop",
+            "id": 3,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "value": 0,
+                "io_name": "ABB_Scalable_IO_0_DO13"
+            },
+            "name": "SetDigital",
+            "id": 4,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "value": 1,
+                "io_name": "ABB_Scalable_IO_0_DO14"
+            },
+            "name": "SetDigital",
+            "id": 5,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": -1,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    -141.733839237902,
+                    52.869506910433586,
+                    -24.500834051027997,
+                    -179.87853215739833,
+                    -61.66224101536686,
+                    82.683927117295553
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 6,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": -1,
+                "feedback_level": 1,
+                "frame": {
+                    "dtype": "compas.geometry/Frame",
+                    "value": {
+                        "yaxis": [
+                            0.71355056902247027,
+                            0.70060365796463187,
+                            0.00031606057402991914
+                        ],
+                        "xaxis": [
+                            -0.70060197431957216,
+                            0.71354971878085216,
+                            -0.0019163525992494355
+                        ],
+                        "point": [
+                            -588.59874121482608,
+                            -436.67091299879718,
+                            198.42968878482691
+                        ]
+                    },
+                    "guid": "35f2cb6f-e72d-4d5a-bc10-5dc5cd4cc092"
+                },
+                "speed": 100.0,
+                "motion_type": "rrc.Motion.LINEAR"
+            },
+            "name": "MoveToFrame",
+            "id": 7,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "time": 1,
+                "feedback_level": 1
+            },
+            "name": "WaitTime",
+            "id": 8,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "value": 0,
+                "io_name": "ABB_Scalable_IO_0_DO14"
+            },
+            "name": "SetDigital",
+            "id": 9,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "value": 1,
+                "io_name": "ABB_Scalable_IO_0_DO13"
+            },
+            "name": "SetDigital",
+            "id": 10,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    -141.733839237902,
+                    52.869506910433586,
+                    -24.500834051027997,
+                    -179.87853215739833,
+                    -61.66224101536686,
+                    82.683927117295553
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 11,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    -141.733839237902,
+                    52.869506910433586,
+                    -24.500834051027997,
+                    -179.87853215739833,
+                    -61.66224101536686,
+                    82.683927117295553
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 12,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    -138.19802572120008,
+                    52.314538061822496,
+                    -26.89243129775037,
+                    -177.91108170144696,
+                    -59.719557762509595,
+                    82.766153584944959
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 13,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    -134.66221220449819,
+                    51.759569213211407,
+                    -29.284028544472747,
+                    -175.94363124549557,
+                    -57.776874509652323,
+                    82.848380052594365
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 14,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    -131.12639868779627,
+                    51.204600364600317,
+                    -31.675625791195117,
+                    -173.9761807895442,
+                    -55.834191256795044,
+                    82.930606520243785
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 15,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    -127.59058517109432,
+                    50.649631515989228,
+                    -34.067223037917486,
+                    -172.00873033359281,
+                    -53.89150800393778,
+                    83.012832987893205
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 16,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    -124.05477165439241,
+                    50.094662667378138,
+                    -36.45882028463987,
+                    -170.04127987764144,
+                    -51.948824751080501,
+                    83.095059455542597
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 17,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    -120.51895813769049,
+                    49.539693818767049,
+                    -38.85041753136224,
+                    -168.07382942169005,
+                    -50.006141498223229,
+                    83.177285923192017
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 18,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    -116.98314462098858,
+                    48.984724970155959,
+                    -41.242014778084609,
+                    -166.10637896573868,
+                    -48.063458245365958,
+                    83.259512390841437
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 19,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    -113.44733110428668,
+                    48.42975612154487,
+                    -43.633612024806979,
+                    -164.13892850978729,
+                    -46.120774992508693,
+                    83.341738858490842
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 20,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    -109.91151758758475,
+                    47.87478727293378,
+                    -46.025209271529356,
+                    -162.17147805383593,
+                    -44.178091739651421,
+                    83.423965326140248
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 21,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    -106.37570407088283,
+                    47.31981842432269,
+                    -48.41680651825174,
+                    -160.20402759788453,
+                    -42.235408486794142,
+                    83.506191793789668
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 22,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    -102.8398905541809,
+                    46.764849575711594,
+                    -50.808403764974102,
+                    -158.23657714193317,
+                    -40.292725233936871,
+                    83.588418261439088
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 23,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    -99.30407703747899,
+                    46.209880727100511,
+                    -53.200001011696479,
+                    -156.26912668598177,
+                    -38.350041981079599,
+                    83.67064472908848
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 24,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    -95.768263520777069,
+                    45.654911878489422,
+                    -55.591598258418848,
+                    -154.30167623003041,
+                    -36.407358728222327,
+                    83.7528711967379
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 25,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    -92.232450004075162,
+                    45.099943029878332,
+                    -57.983195505141218,
+                    -152.33422577407902,
+                    -34.464675475365063,
+                    83.83509766438732
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 26,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    -88.69663648737324,
+                    44.544974181267243,
+                    -60.374792751863588,
+                    -150.36677531812765,
+                    -32.521992222507791,
+                    83.917324132036725
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 27,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    -85.160822970671319,
+                    43.990005332656153,
+                    -62.766389998585964,
+                    -148.39932486217626,
+                    -30.579308969650512,
+                    83.999550599686131
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 28,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    -81.625009453969412,
+                    43.435036484045064,
+                    -65.157987245308348,
+                    -146.43187440622489,
+                    -28.636625716793244,
+                    84.081777067335551
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 29,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    -78.08919593726749,
+                    42.880067635433974,
+                    -67.549584492030718,
+                    -144.46442395027353,
+                    -26.693942463935972,
+                    84.164003534984957
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 30,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    -74.553382420565569,
+                    42.325098786822885,
+                    -69.941181738753087,
+                    -142.49697349432213,
+                    -24.751259211078697,
+                    84.246230002634363
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 31,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    -71.017568903863648,
+                    41.770129938211795,
+                    -72.332778985475471,
+                    -140.52952303837074,
+                    -22.808575958221429,
+                    84.328456470283783
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 32,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    -67.481755387161726,
+                    41.215161089600706,
+                    -74.724376232197841,
+                    -138.56207258241938,
+                    -20.865892705364153,
+                    84.410682937933203
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 33,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    -63.945941870459812,
+                    40.660192240989616,
+                    -77.11597347892021,
+                    -136.59462212646801,
+                    -18.923209452506882,
+                    84.492909405582608
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 34,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    -60.410128353757898,
+                    40.105223392378527,
+                    -79.50757072564258,
+                    -134.62717167051662,
+                    -16.980526199649614,
+                    84.575135873232014
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 35,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    -56.874314837055969,
+                    39.550254543767437,
+                    -81.899167972364964,
+                    -132.65972121456522,
+                    -15.037842946792336,
+                    84.657362340881434
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 36,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    -53.338501320354055,
+                    38.99528569515634,
+                    -84.290765219087319,
+                    -130.69227075861386,
+                    -13.095159693935067,
+                    84.73958880853084
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 37,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    -49.802687803652141,
+                    38.440316846545251,
+                    -86.682362465809703,
+                    -128.72482030266249,
+                    -11.152476441077797,
+                    84.821815276180246
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 38,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    -46.26687428695022,
+                    37.885347997934161,
+                    -89.073959712532087,
+                    -126.75736984671111,
+                    -9.2097931882205195,
+                    84.904041743829666
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 39,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    -42.73106077024832,
+                    37.330379149323079,
+                    -91.465556959254442,
+                    -124.78991939075975,
+                    -7.2671099353632567,
+                    84.986268211479072
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 40,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    -39.195247253546391,
+                    36.775410300711989,
+                    -93.857154205976826,
+                    -122.82246893480836,
+                    -5.3244266825059805,
+                    85.068494679128477
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 41,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    -35.659433736844491,
+                    36.2204414521009,
+                    -96.248751452699182,
+                    -120.85501847885699,
+                    -3.3817434296487172,
+                    85.150721146777897
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 42,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    -32.123620220142563,
+                    35.66547260348981,
+                    -98.640348699421565,
+                    -118.8875680229056,
+                    -1.4390601767914348,
+                    85.232947614427303
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 43,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    -28.587806703440638,
+                    35.110503754878721,
+                    -101.03194594614395,
+                    -116.9201175669542,
+                    0.5036230760658349,
+                    85.315174082076723
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 44,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    -25.051993186738724,
+                    34.555534906267631,
+                    -103.4235431928663,
+                    -114.95266711100284,
+                    2.4463063289231046,
+                    85.397400549726129
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 45,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    -21.516179670036809,
+                    34.000566057656542,
+                    -105.81514043958869,
+                    -112.98521665505146,
+                    4.3889895817803746,
+                    85.479627017375549
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 46,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    -17.98036615333487,
+                    33.445597209045445,
+                    -108.20673768631106,
+                    -111.01776619910008,
+                    6.331672834637657,
+                    85.561853485024955
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 47,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    -14.444552636632981,
+                    32.890628360434363,
+                    -110.59833493303343,
+                    -109.05031574314872,
+                    8.2743560874949136,
+                    85.64407995267436
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 48,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    -10.908739119931042,
+                    32.335659511823273,
+                    -112.98993217975581,
+                    -107.08286528719732,
+                    10.217039340352196,
+                    85.72630642032378
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 49,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    -7.3729256032291284,
+                    31.780690663212184,
+                    -115.38152942647817,
+                    -105.11541483124596,
+                    12.159722593209466,
+                    85.808532887973186
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 50,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    -3.8371120865272146,
+                    31.225721814601094,
+                    -117.77312667320055,
+                    -103.14796437529458,
+                    14.102405846066736,
+                    85.890759355622606
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 51,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    -0.30129856982530079,
+                    30.670752965989998,
+                    -120.16472391992295,
+                    -101.1805139193432,
+                    16.045089098924006,
+                    85.972985823272012
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 52,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    3.234514946876613,
+                    30.115784117378908,
+                    -122.5563211666453,
+                    -99.213063463391833,
+                    17.987772351781274,
+                    86.055212290921418
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 53,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    6.7703284635785526,
+                    29.560815268767822,
+                    -124.94791841336769,
+                    -97.24561300744044,
+                    19.93045560463856,
+                    86.137438758570838
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 54,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    10.30614198028044,
+                    29.005846420156733,
+                    -127.33951566009003,
+                    -95.278162551489075,
+                    21.873138857495814,
+                    86.219665226220243
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 55,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    13.841955496982379,
+                    28.450877571545643,
+                    -129.7311129068124,
+                    -93.310712095537696,
+                    23.815822110353096,
+                    86.301891693869649
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 56,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    17.377769013684293,
+                    27.895908722934553,
+                    -132.1227101535348,
+                    -91.343261639586302,
+                    25.758505363210368,
+                    86.384118161519069
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 57,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    20.913582530386208,
+                    27.340939874323468,
+                    -134.51430740025717,
+                    -89.375811183634937,
+                    27.701188616067636,
+                    86.466344629168489
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 58,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    24.449396047088122,
+                    26.785971025712374,
+                    -136.90590464697954,
+                    -87.408360727683558,
+                    29.643871868924908,
+                    86.548571096817895
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 59,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    27.985209563790061,
+                    26.231002177101285,
+                    -139.29750189370193,
+                    -85.440910271732164,
+                    31.58655512178219,
+                    86.630797564467301
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 60,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    31.521023080491947,
+                    25.676033328490195,
+                    -141.68909914042428,
+                    -83.473459815780799,
+                    33.529238374639448,
+                    86.713024032116721
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 61,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    35.056836597193886,
+                    25.121064479879106,
+                    -144.08069638714665,
+                    -81.50600935982942,
+                    35.471921627496727,
+                    86.795250499766126
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 62,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    38.5926501138958,
+                    24.56609563126802,
+                    -146.47229363386904,
+                    -79.538558903878041,
+                    37.414604880353998,
+                    86.877476967415532
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 63,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    42.128463630597714,
+                    24.011126782656927,
+                    -148.86389088059141,
+                    -77.571108447926662,
+                    39.357288133211277,
+                    86.959703435064952
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 64,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    47.836680962046024,
+                    22.751038495580755,
+                    -149.35677334760811,
+                    -79.740793222248797,
+                    40.059227977357814,
+                    87.091635266372109
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 65,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    53.544898293494342,
+                    21.490950208504582,
+                    -149.84965581462481,
+                    -81.910477996570918,
+                    40.761167821504358,
+                    87.223567097679265
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 66,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    59.253115624942637,
+                    20.23086192142841,
+                    -150.34253828164151,
+                    -84.080162770893054,
+                    41.463107665650895,
+                    87.355498928986421
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 67,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    64.961332956390962,
+                    18.970773634352234,
+                    -150.83542074865824,
+                    -86.249847545215175,
+                    42.165047509797439,
+                    87.487430760293577
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 68,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    70.669550287839257,
+                    17.710685347276065,
+                    -151.32830321567494,
+                    -88.419532319537296,
+                    42.866987353943983,
+                    87.619362591600719
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 69,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    76.377767619287582,
+                    16.450597060199893,
+                    -151.82118568269166,
+                    -90.589217093859418,
+                    43.56892719809052,
+                    87.751294422907876
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 70,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    82.085984950735892,
+                    15.190508773123717,
+                    -152.31406814970833,
+                    -92.758901868181553,
+                    44.270867042237064,
+                    87.883226254215032
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 71,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    87.794202282184202,
+                    13.930420486047547,
+                    -152.80695061672506,
+                    -94.928586642503674,
+                    44.972806886383609,
+                    88.015158085522188
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 72,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    93.502419613632512,
+                    12.670332198971373,
+                    -153.29983308374176,
+                    -97.09827141682581,
+                    45.674746730530146,
+                    88.147089916829344
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 73,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    99.210636945080822,
+                    11.410243911895201,
+                    -153.79271555075846,
+                    -99.267956191147945,
+                    46.37668657467669,
+                    88.2790217481365
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 74,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    104.91885427652913,
+                    10.15015562481903,
+                    -154.28559801777516,
+                    -101.43764096547007,
+                    47.078626418823227,
+                    88.410953579443657
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 75,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    110.62707160797744,
+                    8.8900673377428578,
+                    -154.77848048479188,
+                    -103.6073257397922,
+                    47.780566262969771,
+                    88.542885410750799
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 76,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    116.33528893942577,
+                    7.6299790506666838,
+                    -155.27136295180858,
+                    -105.77701051411432,
+                    48.482506107116308,
+                    88.674817242057955
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 77,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    122.04350627087406,
+                    6.3698907635905115,
+                    -155.76424541882531,
+                    -107.94669528843644,
+                    49.184445951262852,
+                    88.806749073365111
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 78,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    127.75172360232236,
+                    5.1098024765143375,
+                    -156.25712788584198,
+                    -110.11638006275858,
+                    49.886385795409396,
+                    88.938680904672268
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 79,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    133.4599409337707,
+                    3.8497141894381652,
+                    -156.75001035285871,
+                    -112.2860648370807,
+                    50.588325639555933,
+                    89.070612735979424
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 80,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "text": "RobotB goes to final position of element"
+            },
+            "name": "PrintText",
+            "id": 81,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {},
+            "name": "Stop",
+            "id": 82,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": -1,
+                "feedback_level": 1,
+                "frame": {
+                    "dtype": "compas.geometry/Frame",
+                    "value": {
+                        "yaxis": [
+                            -0.0084140679761116784,
+                            -0.82055335517565731,
+                            0.571508000617721
+                        ],
+                        "xaxis": [
+                            0.0039364374388682847,
+                            0.57149662384360855,
+                            0.82059497524396707
+                        ],
+                        "point": [
+                            505.69234421452035,
+                            -385.67021583931842,
+                            848.65088570432044
+                        ]
+                    },
+                    "guid": "8b365a4b-ad1b-4842-a0af-e3ce1adbf658"
+                },
+                "speed": 100.0,
+                "motion_type": "rrc.Motion.LINEAR"
+            },
+            "name": "MoveToFrame",
+            "id": 83,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "text": "Release element?"
+            },
+            "name": "PrintText",
+            "id": 84,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {},
+            "name": "Stop",
+            "id": 85,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "value": 0,
+                "io_name": "ABB_Scalable_IO_0_DO13"
+            },
+            "name": "SetDigital",
+            "id": 86,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "value": 1,
+                "io_name": "ABB_Scalable_IO_0_DO14"
+            },
+            "name": "SetDigital",
+            "id": 87,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "time": 0.5,
+                "feedback_level": 1
+            },
+            "name": "WaitTime",
+            "id": 88,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": -1,
+                "feedback_level": 1,
+                "frame": {
+                    "dtype": "compas.geometry/Frame",
+                    "value": {
+                        "yaxis": [
+                            -0.0084140679761116784,
+                            -0.82055335517565731,
+                            0.571508000617721
+                        ],
+                        "xaxis": [
+                            0.0039364374388682847,
+                            0.57149662384360855,
+                            0.82059497524396707
+                        ],
+                        "point": [
+                            405.69665891158422,
+                            -384.75479110003812,
+                            848.49303025499694
+                        ]
+                    },
+                    "guid": "f91f8667-d311-4d1e-ae65-46d514a6005d"
+                },
+                "speed": 100.0,
+                "motion_type": "rrc.Motion.LINEAR"
+            },
+            "name": "MoveToFrame",
+            "id": 89,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "text": "RobotB goes to pick element"
+            },
+            "name": "PrintText",
+            "id": 90,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {},
+            "name": "Stop",
+            "id": 91,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    133.4599409337707,
+                    3.8497141894381652,
+                    -156.75001035285871,
+                    -112.2860648370807,
+                    50.588325639555933,
+                    89.070612735979424
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 92,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    127.75172360232236,
+                    5.1098024765143375,
+                    -156.25712788584198,
+                    -110.11638006275858,
+                    49.886385795409396,
+                    88.938680904672268
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 93,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    122.04350627087406,
+                    6.3698907635905115,
+                    -155.76424541882531,
+                    -107.94669528843644,
+                    49.184445951262852,
+                    88.806749073365111
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 94,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    116.33528893942577,
+                    7.6299790506666838,
+                    -155.27136295180858,
+                    -105.77701051411432,
+                    48.482506107116308,
+                    88.674817242057955
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 95,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    110.62707160797744,
+                    8.8900673377428578,
+                    -154.77848048479188,
+                    -103.6073257397922,
+                    47.780566262969771,
+                    88.542885410750799
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 96,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    104.91885427652913,
+                    10.15015562481903,
+                    -154.28559801777516,
+                    -101.43764096547007,
+                    47.078626418823227,
+                    88.410953579443657
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 97,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    99.210636945080822,
+                    11.410243911895201,
+                    -153.79271555075846,
+                    -99.267956191147945,
+                    46.37668657467669,
+                    88.2790217481365
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 98,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    93.502419613632512,
+                    12.670332198971373,
+                    -153.29983308374176,
+                    -97.09827141682581,
+                    45.674746730530146,
+                    88.147089916829344
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 99,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    87.794202282184202,
+                    13.930420486047547,
+                    -152.80695061672506,
+                    -94.928586642503674,
+                    44.972806886383609,
+                    88.015158085522188
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 100,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    82.085984950735892,
+                    15.190508773123717,
+                    -152.31406814970833,
+                    -92.758901868181553,
+                    44.270867042237064,
+                    87.883226254215032
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 101,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    76.377767619287582,
+                    16.450597060199893,
+                    -151.82118568269166,
+                    -90.589217093859418,
+                    43.56892719809052,
+                    87.751294422907876
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 102,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    70.669550287839257,
+                    17.710685347276065,
+                    -151.32830321567494,
+                    -88.419532319537296,
+                    42.866987353943983,
+                    87.619362591600719
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 103,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    64.961332956390962,
+                    18.970773634352234,
+                    -150.83542074865824,
+                    -86.249847545215175,
+                    42.165047509797439,
+                    87.487430760293577
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 104,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    59.253115624942637,
+                    20.23086192142841,
+                    -150.34253828164151,
+                    -84.080162770893054,
+                    41.463107665650895,
+                    87.355498928986421
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 105,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    53.544898293494342,
+                    21.490950208504582,
+                    -149.84965581462481,
+                    -81.910477996570918,
+                    40.761167821504358,
+                    87.223567097679265
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 106,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    47.836680962046024,
+                    22.751038495580755,
+                    -149.35677334760811,
+                    -79.740793222248797,
+                    40.059227977357814,
+                    87.091635266372109
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 107,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    42.128463630597714,
+                    24.011126782656927,
+                    -148.86389088059141,
+                    -77.571108447926662,
+                    39.357288133211277,
+                    86.959703435064952
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 108,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    38.5926501138958,
+                    24.56609563126802,
+                    -146.47229363386904,
+                    -79.538558903878041,
+                    37.414604880353998,
+                    86.877476967415532
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 109,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    35.056836597193886,
+                    25.121064479879106,
+                    -144.08069638714665,
+                    -81.50600935982942,
+                    35.471921627496727,
+                    86.795250499766126
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 110,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    31.521023080491947,
+                    25.676033328490195,
+                    -141.68909914042428,
+                    -83.473459815780799,
+                    33.529238374639448,
+                    86.713024032116721
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 111,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    27.985209563790061,
+                    26.231002177101285,
+                    -139.29750189370193,
+                    -85.440910271732164,
+                    31.58655512178219,
+                    86.630797564467301
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 112,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    24.449396047088122,
+                    26.785971025712374,
+                    -136.90590464697954,
+                    -87.408360727683558,
+                    29.643871868924908,
+                    86.548571096817895
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 113,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    20.913582530386208,
+                    27.340939874323468,
+                    -134.51430740025717,
+                    -89.375811183634937,
+                    27.701188616067636,
+                    86.466344629168489
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 114,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    17.377769013684293,
+                    27.895908722934553,
+                    -132.1227101535348,
+                    -91.343261639586302,
+                    25.758505363210368,
+                    86.384118161519069
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 115,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    13.841955496982379,
+                    28.450877571545643,
+                    -129.7311129068124,
+                    -93.310712095537696,
+                    23.815822110353096,
+                    86.301891693869649
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 116,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    10.30614198028044,
+                    29.005846420156733,
+                    -127.33951566009003,
+                    -95.278162551489075,
+                    21.873138857495814,
+                    86.219665226220243
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 117,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    6.7703284635785526,
+                    29.560815268767822,
+                    -124.94791841336769,
+                    -97.24561300744044,
+                    19.93045560463856,
+                    86.137438758570838
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 118,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    3.234514946876613,
+                    30.115784117378908,
+                    -122.5563211666453,
+                    -99.213063463391833,
+                    17.987772351781274,
+                    86.055212290921418
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 119,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    -0.30129856982530079,
+                    30.670752965989998,
+                    -120.16472391992295,
+                    -101.1805139193432,
+                    16.045089098924006,
+                    85.972985823272012
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 120,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    -3.8371120865272146,
+                    31.225721814601094,
+                    -117.77312667320055,
+                    -103.14796437529458,
+                    14.102405846066736,
+                    85.890759355622606
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 121,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    -7.3729256032291284,
+                    31.780690663212184,
+                    -115.38152942647817,
+                    -105.11541483124596,
+                    12.159722593209466,
+                    85.808532887973186
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 122,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    -10.908739119931042,
+                    32.335659511823273,
+                    -112.98993217975581,
+                    -107.08286528719732,
+                    10.217039340352196,
+                    85.72630642032378
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 123,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    -14.444552636632981,
+                    32.890628360434363,
+                    -110.59833493303343,
+                    -109.05031574314872,
+                    8.2743560874949136,
+                    85.64407995267436
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 124,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    -17.98036615333487,
+                    33.445597209045445,
+                    -108.20673768631106,
+                    -111.01776619910008,
+                    6.331672834637657,
+                    85.561853485024955
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 125,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    -21.516179670036809,
+                    34.000566057656542,
+                    -105.81514043958869,
+                    -112.98521665505146,
+                    4.3889895817803746,
+                    85.479627017375549
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 126,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    -25.051993186738724,
+                    34.555534906267631,
+                    -103.4235431928663,
+                    -114.95266711100284,
+                    2.4463063289231046,
+                    85.397400549726129
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 127,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    -28.587806703440638,
+                    35.110503754878721,
+                    -101.03194594614395,
+                    -116.9201175669542,
+                    0.5036230760658349,
+                    85.315174082076723
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 128,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    -32.123620220142563,
+                    35.66547260348981,
+                    -98.640348699421565,
+                    -118.8875680229056,
+                    -1.4390601767914348,
+                    85.232947614427303
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 129,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    -35.659433736844491,
+                    36.2204414521009,
+                    -96.248751452699182,
+                    -120.85501847885699,
+                    -3.3817434296487172,
+                    85.150721146777897
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 130,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    -39.195247253546391,
+                    36.775410300711989,
+                    -93.857154205976826,
+                    -122.82246893480836,
+                    -5.3244266825059805,
+                    85.068494679128477
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 131,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    -42.73106077024832,
+                    37.330379149323079,
+                    -91.465556959254442,
+                    -124.78991939075975,
+                    -7.2671099353632567,
+                    84.986268211479072
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 132,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    -46.26687428695022,
+                    37.885347997934161,
+                    -89.073959712532087,
+                    -126.75736984671111,
+                    -9.2097931882205195,
+                    84.904041743829666
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 133,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    -49.802687803652141,
+                    38.440316846545251,
+                    -86.682362465809703,
+                    -128.72482030266249,
+                    -11.152476441077797,
+                    84.821815276180246
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 134,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    -53.338501320354055,
+                    38.99528569515634,
+                    -84.290765219087319,
+                    -130.69227075861386,
+                    -13.095159693935067,
+                    84.73958880853084
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 135,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    -56.874314837055969,
+                    39.550254543767437,
+                    -81.899167972364964,
+                    -132.65972121456522,
+                    -15.037842946792336,
+                    84.657362340881434
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 136,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    -60.410128353757898,
+                    40.105223392378527,
+                    -79.50757072564258,
+                    -134.62717167051662,
+                    -16.980526199649614,
+                    84.575135873232014
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 137,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    -63.945941870459812,
+                    40.660192240989616,
+                    -77.11597347892021,
+                    -136.59462212646801,
+                    -18.923209452506882,
+                    84.492909405582608
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 138,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    -67.481755387161726,
+                    41.215161089600706,
+                    -74.724376232197841,
+                    -138.56207258241938,
+                    -20.865892705364153,
+                    84.410682937933203
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 139,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    -71.017568903863648,
+                    41.770129938211795,
+                    -72.332778985475471,
+                    -140.52952303837074,
+                    -22.808575958221429,
+                    84.328456470283783
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 140,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    -74.553382420565569,
+                    42.325098786822885,
+                    -69.941181738753087,
+                    -142.49697349432213,
+                    -24.751259211078697,
+                    84.246230002634363
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 141,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    -78.08919593726749,
+                    42.880067635433974,
+                    -67.549584492030718,
+                    -144.46442395027353,
+                    -26.693942463935972,
+                    84.164003534984957
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 142,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    -81.625009453969412,
+                    43.435036484045064,
+                    -65.157987245308348,
+                    -146.43187440622489,
+                    -28.636625716793244,
+                    84.081777067335551
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 143,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    -85.160822970671319,
+                    43.990005332656153,
+                    -62.766389998585964,
+                    -148.39932486217626,
+                    -30.579308969650512,
+                    83.999550599686131
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 144,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    -88.69663648737324,
+                    44.544974181267243,
+                    -60.374792751863588,
+                    -150.36677531812765,
+                    -32.521992222507791,
+                    83.917324132036725
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 145,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    -92.232450004075162,
+                    45.099943029878332,
+                    -57.983195505141218,
+                    -152.33422577407902,
+                    -34.464675475365063,
+                    83.83509766438732
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 146,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    -95.768263520777069,
+                    45.654911878489422,
+                    -55.591598258418848,
+                    -154.30167623003041,
+                    -36.407358728222327,
+                    83.7528711967379
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 147,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    -99.30407703747899,
+                    46.209880727100511,
+                    -53.200001011696479,
+                    -156.26912668598177,
+                    -38.350041981079599,
+                    83.67064472908848
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 148,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    -102.8398905541809,
+                    46.764849575711594,
+                    -50.808403764974102,
+                    -158.23657714193317,
+                    -40.292725233936871,
+                    83.588418261439088
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 149,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    -106.37570407088283,
+                    47.31981842432269,
+                    -48.41680651825174,
+                    -160.20402759788453,
+                    -42.235408486794142,
+                    83.506191793789668
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 150,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    -109.91151758758475,
+                    47.87478727293378,
+                    -46.025209271529356,
+                    -162.17147805383593,
+                    -44.178091739651421,
+                    83.423965326140248
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 151,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    -113.44733110428668,
+                    48.42975612154487,
+                    -43.633612024806979,
+                    -164.13892850978729,
+                    -46.120774992508693,
+                    83.341738858490842
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 152,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    -116.98314462098858,
+                    48.984724970155959,
+                    -41.242014778084609,
+                    -166.10637896573868,
+                    -48.063458245365958,
+                    83.259512390841437
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 153,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    -120.51895813769049,
+                    49.539693818767049,
+                    -38.85041753136224,
+                    -168.07382942169005,
+                    -50.006141498223229,
+                    83.177285923192017
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 154,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    -124.05477165439241,
+                    50.094662667378138,
+                    -36.45882028463987,
+                    -170.04127987764144,
+                    -51.948824751080501,
+                    83.095059455542597
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 155,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    -127.59058517109432,
+                    50.649631515989228,
+                    -34.067223037917486,
+                    -172.00873033359281,
+                    -53.89150800393778,
+                    83.012832987893205
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 156,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    -131.12639868779627,
+                    51.204600364600317,
+                    -31.675625791195117,
+                    -173.9761807895442,
+                    -55.834191256795044,
+                    82.930606520243785
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 157,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    -134.66221220449819,
+                    51.759569213211407,
+                    -29.284028544472747,
+                    -175.94363124549557,
+                    -57.776874509652323,
+                    82.848380052594365
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 158,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    -138.19802572120008,
+                    52.314538061822496,
+                    -26.89243129775037,
+                    -177.91108170144696,
+                    -59.719557762509595,
+                    82.766153584944959
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 159,
+            "dependency_ids": [],
+            "namespace": "/"
+        },
+        {
+            "parameters": {
+                "zone": 5,
+                "feedback_level": 1,
+                "speed": 100.0,
+                "joints": [
+                    -141.733839237902,
+                    52.869506910433586,
+                    -24.500834051027997,
+                    -179.87853215739833,
+                    -61.66224101536686,
+                    82.683927117295553
+                ],
+                "ext_axes": []
+            },
+            "name": "MoveToJoints",
+            "id": 160,
+            "dependency_ids": [],
+            "namespace": "/"
+        }
+    ]
+}
