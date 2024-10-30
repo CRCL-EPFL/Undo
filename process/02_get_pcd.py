@@ -81,64 +81,64 @@ chunk.alignCameras()
 aligned_cameras = [camera for camera in chunk.cameras if camera.transform is not None]
 print(str(len(aligned_cameras)) + " cameras were aligned")
 
-# # Add marker coordinates manually
-# markers = chunk.markers
+# Add marker coordinates manually
+markers = chunk.markers
 
-# marker_coordinates = {
-#     11: (5.170,3.279,-0.197),
-#     14: (0.001,3.048,-0.192),
-#     16: (0.241,-0.004,-0.193),
-#     20: (0.187,3.285,-0.198),
-#     28: (5.392,0.226,-0.202),
-#     33: (5.397,3.093,-0.204),
-#     52: (5.223,-0.010,-0.191),
-#     53: (-0.000,0.168,-0.177),
-#     61: (5.146,3.060,-0.020),
-#     84: (0.172,3.055,-0.024),
-#     90: (0.174,0.181,-0.014),
-#     92: (0.205,1.726,-0.017),
-#     93: (3.429,3.047,-0.032)
-# }
+marker_coordinates = {
+    11: (5.170,3.279,-0.197),
+    14: (0.001,3.048,-0.192),
+    16: (0.241,-0.004,-0.193),
+    20: (0.187,3.285,-0.198),
+    28: (5.392,0.226,-0.202),
+    33: (5.397,3.093,-0.204),
+    52: (5.223,-0.010,-0.191),
+    53: (-0.000,0.168,-0.177),
+    61: (5.146,3.060,-0.020),
+    84: (0.172,3.055,-0.024),
+    90: (0.174,0.181,-0.014),
+    92: (0.205,1.726,-0.017),
+    93: (3.429,3.047,-0.032)
+}
 
+for marker in chunk.markers:
+    idx = int(marker.label[-2:])
+    if idx in marker_coordinates:
+        coords = marker_coordinates[idx]
+        marker.reference.location = Metashape.Vector(coords)
+        marker.reference.enabled = True  # Ensure the marker is enabled in the reference system
+        print(f"Set marker {idx} with coordinates: {coords}")
+    # else:
+    #     print(f"Marker {idx} not found in reference coordinates!")
+
+# Log all marker coordinates for debugging
 # for marker in chunk.markers:
-#     idx = int(marker.label[-2:])
-#     if idx in marker_coordinates:
-#         coords = marker_coordinates[idx]
-#         marker.reference.location = Metashape.Vector(coords)
-#         marker.reference.enabled = True  # Ensure the marker is enabled in the reference system
-#         print(f"Set marker {idx} with coordinates: {coords}")
-#     # else:
-#     #     print(f"Marker {idx} not found in reference coordinates!")
+#     if marker.reference.location is not None:
+#         print(f"Marker {marker.label} coordinates: {marker.reference.location}")
 
-# # Log all marker coordinates for debugging
-# # for marker in chunk.markers:
-# #     if marker.reference.location is not None:
-# #         print(f"Marker {marker.label} coordinates: {marker.reference.location}")
+# Update transformation (optimize camera alignment and marker position)
+chunk.updateTransform()
 
-# # Update transformation (optimize camera alignment and marker position)
-# chunk.updateTransform()
+# Build depth maps (required before building point cloud)
+chunk.buildDepthMaps(downscale=2, filter_mode=Metashape.MildFiltering)
 
-# # Build depth maps (required before building point cloud)
-# chunk.buildDepthMaps(downscale=2, filter_mode=Metashape.MildFiltering)
+# Build dense point cloud
+chunk.buildPointCloud(source_data=Metashape.DepthMapsData, point_colors=True)
 
-# # Build dense point cloud
-# chunk.buildPointCloud(source_data=Metashape.DepthMapsData, point_colors=True)
+# Export the point cloud to a .ply file
+chunk.exportPointCloud(point_cloud_path, format=Metashape.PointCloudFormatPLY)
 
-# # Export the point cloud to a .ply file
-# chunk.exportPointCloud(point_cloud_path, format=Metashape.PointCloudFormatPLY)
+# Save project after processing
+doc.save()
 
-# # Save project after processing
-# doc.save()
+print("Script completed successfully.")
 
-# print("Script completed successfully.")
+# End timing and print the elapsed time
+end_time = time.time()
+elapsed_time = (end_time - start_time)/60
+print(f"Script took {elapsed_time:.2f} minutes to complete.")
 
-# # End timing and print the elapsed time
-# end_time = time.time()
-# elapsed_time = (end_time - start_time)/60
-# print(f"Script took {elapsed_time:.2f} minutes to complete.")
+input_ply_path = point_cloud_path  # Update with your .ply file path
+output_ply_path = FOLDER + "/ply/model_clean.ply"  # Path to save the filtered .ply file
 
-# input_ply_path = point_cloud_path  # Update with your .ply file path
-# output_ply_path = FOLDER + "/ply/model_clean.ply"  # Path to save the filtered .ply file
-
-# # Run the filter function
-# filter_point_cloud(input_ply_path, output_ply_path)
+# Run the filter function
+filter_point_cloud(input_ply_path, output_ply_path)
