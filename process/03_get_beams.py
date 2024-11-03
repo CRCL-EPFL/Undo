@@ -75,7 +75,7 @@ def interface():
 if __name__ == '__main__':
     ps.init()
     ps.set_up_dir("z_up")
-    point_cloud = PointCloud("scan.ply") 
+    point_cloud = PointCloud("state_C_clean.ply") 
     # downsample 10%
     point_cloud.sample(point_cloud.n())
     point_cloud.register_points()
