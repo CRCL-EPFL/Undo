@@ -8,7 +8,7 @@ import time
 
 HERE = os.path.dirname(__file__)
 DATA = os.path.abspath(os.path.join(HERE, '..', 'data'))
-file_name = DATA + "/"+"20240912_scan.json"
+file_name = DATA + "/"+"20240731_scan.json"
 
 PRODUCTION_LOG_CONFIG = dict(
     ENABLED=True,                       # Generate a log of received feedback
@@ -32,7 +32,7 @@ if __name__ == '__main__':
     ros.run()
 
     # Create ABB Client
-    abb = rrc.AbbClient(ros, '/rob2')
+    abb = rrc.AbbClient(ros, '/rob1')
     print('Connected.')
 
     cameraNumber = 0
