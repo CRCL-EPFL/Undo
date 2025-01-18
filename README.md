@@ -49,10 +49,10 @@ The project uses the following 3rd party libraries:
 ```
 ### 2. Install undo library
 ```terminal
-(undo) cd C:\Users\eleni\Documents\GitHub\Undo>
+(undo) cd C:\Users\usename\Documents\GitHub\Undo>
 ```
 ```terminal
-(undo) C:\Users\eleni\Documents\GitHub\Undo> pip install -e.
+(undo) C:\Users\username\Documents\GitHub\Undo> pip install -e.
 ```
 ### 3. Install Metashape module as a regular wheel package which you downloaded from [here](https://agisoft.freshdesk.com/support/solutions/articles/31000148930-how-to-install-metashape-stand-alone-python-module)
 on Windows (64-bit)
